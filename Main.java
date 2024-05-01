@@ -131,7 +131,31 @@ public class Main {
         // int result = str.medium.StringToInteger.atoi("00000-42a1234");
         // int result = str.medium.CountKDistinct.count("aacfssa", 3);
         // String result = str.medium.LongestPalindromicSubstring.longest("babad");
-        int result = str.medium.SumofBeautyofAllSubstrings.getBeauty("aabcb");
+        // int result = str.medium.SumofBeautyofAllSubstrings.getBeauty("aabcb");
+
+
+        // Bit Manipulation
+        // Boolean result = bitmanipulation.CheckKBitSet.check(5, 3);
+        // String result = bitmanipulation.CheckOdd.isOddEven(0);
+        // Boolean result = bitmanipulation.PowerOf2.isPower2(-65536);
+        // int result = bitmanipulation.CountSetBits.count(4);
+        // int result = bitmanipulation.RightmostUnsetBit.setUnset(7);
+        // int[] result = bitmanipulation.Swap2Numbers.swap(new int[]{5,9});
+        // int result = bitmanipulation.easy.Divide2Integers.divide(Integer.MIN_VALUE, 1);
+        // int result = bitmanipulation.medium.FlipBits.flipCount(13, 9);
+        // int result = bitmanipulation.medium.OneOdd.oddOne(new int[]{4,5,6,5,6,9,9,4,4});
+        // String[] result = bitmanipulation.medium.PowerSet.getSubstring("abc");
+        // int result = bitmanipulation.medium.LtoRXOR.ltor(3, 5);
+        // int[] result = bitmanipulation.medium.SingleNumber3.solve(new int[]{1,2,1,3,2,5});
+        // int result = bitmanipulation.medium.SingleNumber2.solve(new int[]{1,1,1,2,2,2,3});
+
+
+        // Adv Maths
+        // int[] result = bitmanipulation.adv_maths.CountPrimes.count(763);
+        // int[] result = bitmanipulation.adv_maths.PrintAllDivisor.allDivisor(56);
+        // int[] result = bitmanipulation.adv_maths.SieveOfErath.count(74);
+        // int[] result = bitmanipulation.adv_maths.CountPrimes.countSieve(763);
+        int result = bitmanipulation.adv_maths.Powxn.pow(2, 23);
         System.out.println(result);
     }
 }

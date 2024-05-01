@@ -1,4 +1,4 @@
-package str.medium;
+package str.hard;
 
 /*
  * Longest Palindromic Substring
