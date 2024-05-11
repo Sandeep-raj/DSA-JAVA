@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main {
 
@@ -215,8 +216,13 @@ public class Main {
         // String result = stack_queues.monotonic.RemoveKDigits.remove("10200", 1);
         // int result = stack_queues.monotonic.LargestRectangleHistogram.largestArea(new
         // int[]{2,4});
-        int result = stack_queues.monotonic.MaximalRectangle.maxArea(new String[][] { { "1", "0", "1", "0", "0" },
-                { "1", "0", "1", "1", "1" }, { "1", "1", "1", "1", "1" }, { "1", "0", "0", "1", "0" } });
-        System.out.println(result);
+        // int result = stack_queues.monotonic.MaximalRectangle.maxArea(new String[][] { { "1", "0", "1", "0", "0" },
+        //         { "1", "0", "1", "1", "1" }, { "1", "1", "1", "1", "1" }, { "1", "0", "0", "1", "0" } });
+        // int[] result = stack_queues.implementation.SlidingWindowMax.max(new int[]{1,3,-1,-3,5,3,6,7}, 3);
+        // int[] result = stack_queues.implementation.StockSpan.span(new int[]{100,80,60,70,60,75,85});
+        // int result = stack_queues.implementation.Celebrity.celeb(new int[][]{{0,0,0,0} , {0,0,1,0} , {0,0,0,0}, {0,0,1,0}});
+        // stack_queues.implementation.LRUCache.test();
+        stack_queues.implementation.LFUCache.test();
+        // System.out.println(result);
     }
 }
