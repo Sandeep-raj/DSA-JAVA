@@ -222,7 +222,23 @@ public class Main {
         // int[] result = stack_queues.implementation.StockSpan.span(new int[]{100,80,60,70,60,75,85});
         // int result = stack_queues.implementation.Celebrity.celeb(new int[][]{{0,0,0,0} , {0,0,1,0} , {0,0,0,0}, {0,0,1,0}});
         // stack_queues.implementation.LRUCache.test();
-        stack_queues.implementation.LFUCache.test();
-        // System.out.println(result);
+        // stack_queues.implementation.LFUCache.test();
+
+
+
+        // Sliding Window and 2 Pointer
+        // int result = sliding_wdw_2_pointer.medium.LongestSubstrWithoutRepeating.longest("pwwkew");
+        // int result = sliding_wdw_2_pointer.medium.MaxConsecutiveOnes3.longest(new int[]{1,1,1,0,0,0,1,1,1,1}, 0);
+        // int result = sliding_wdw_2_pointer.medium.FruitIntoBaskets.max(new int[]{1,2,3,2,2});
+        // int result = sliding_wdw_2_pointer.medium.LongestRepeatingCharReplacement.longest("ABBB", 2);
+        // int result = sliding_wdw_2_pointer.medium.BinarySubarraysWithSum.count(new int[]{0,0,0,0,0}, 0);
+        // int result = sliding_wdw_2_pointer.medium.CountNiceSubarr.count(new int[]{2,2,2,1,2,2,1,2,2,2}, 2);
+        // int result = sliding_wdw_2_pointer.medium.NumSubstrContainsAll3Chars.count("abcabc");
+        // int result = sliding_wdw_2_pointer.medium.MaxPointsFromCards.max(new int[]{9,7,7,9,7,7,9}, 7);
+        // int result = sliding_wdw_2_pointer.hard.LongestSubstrMostKDistinctChars.longest("abcefg", 1);
+        // int result = sliding_wdw_2_pointer.hard.SubarrwithKDiffInt.count(new int[]{2,1,1,1,2}, 1);
+        // String result = sliding_wdw_2_pointer.hard.MinimumWindowSubstring.minWindow("abcdebdde", "bde");
+        String result = sliding_wdw_2_pointer.hard.MinimumWindowSubsequence.minSubSequence("dynamicprogramming", "mm");
+        System.out.println(result);
     }
 }
