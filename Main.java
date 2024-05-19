@@ -216,29 +216,70 @@ public class Main {
         // String result = stack_queues.monotonic.RemoveKDigits.remove("10200", 1);
         // int result = stack_queues.monotonic.LargestRectangleHistogram.largestArea(new
         // int[]{2,4});
-        // int result = stack_queues.monotonic.MaximalRectangle.maxArea(new String[][] { { "1", "0", "1", "0", "0" },
-        //         { "1", "0", "1", "1", "1" }, { "1", "1", "1", "1", "1" }, { "1", "0", "0", "1", "0" } });
-        // int[] result = stack_queues.implementation.SlidingWindowMax.max(new int[]{1,3,-1,-3,5,3,6,7}, 3);
-        // int[] result = stack_queues.implementation.StockSpan.span(new int[]{100,80,60,70,60,75,85});
-        // int result = stack_queues.implementation.Celebrity.celeb(new int[][]{{0,0,0,0} , {0,0,1,0} , {0,0,0,0}, {0,0,1,0}});
+        // int result = stack_queues.monotonic.MaximalRectangle.maxArea(new String[][] {
+        // { "1", "0", "1", "0", "0" },
+        // { "1", "0", "1", "1", "1" }, { "1", "1", "1", "1", "1" }, { "1", "0", "0",
+        // "1", "0" } });
+        // int[] result = stack_queues.implementation.SlidingWindowMax.max(new
+        // int[]{1,3,-1,-3,5,3,6,7}, 3);
+        // int[] result = stack_queues.implementation.StockSpan.span(new
+        // int[]{100,80,60,70,60,75,85});
+        // int result = stack_queues.implementation.Celebrity.celeb(new
+        // int[][]{{0,0,0,0} , {0,0,1,0} , {0,0,0,0}, {0,0,1,0}});
         // stack_queues.implementation.LRUCache.test();
         // stack_queues.implementation.LFUCache.test();
 
-
-
         // Sliding Window and 2 Pointer
-        // int result = sliding_wdw_2_pointer.medium.LongestSubstrWithoutRepeating.longest("pwwkew");
-        // int result = sliding_wdw_2_pointer.medium.MaxConsecutiveOnes3.longest(new int[]{1,1,1,0,0,0,1,1,1,1}, 0);
-        // int result = sliding_wdw_2_pointer.medium.FruitIntoBaskets.max(new int[]{1,2,3,2,2});
-        // int result = sliding_wdw_2_pointer.medium.LongestRepeatingCharReplacement.longest("ABBB", 2);
-        // int result = sliding_wdw_2_pointer.medium.BinarySubarraysWithSum.count(new int[]{0,0,0,0,0}, 0);
-        // int result = sliding_wdw_2_pointer.medium.CountNiceSubarr.count(new int[]{2,2,2,1,2,2,1,2,2,2}, 2);
-        // int result = sliding_wdw_2_pointer.medium.NumSubstrContainsAll3Chars.count("abcabc");
-        // int result = sliding_wdw_2_pointer.medium.MaxPointsFromCards.max(new int[]{9,7,7,9,7,7,9}, 7);
-        // int result = sliding_wdw_2_pointer.hard.LongestSubstrMostKDistinctChars.longest("abcefg", 1);
-        // int result = sliding_wdw_2_pointer.hard.SubarrwithKDiffInt.count(new int[]{2,1,1,1,2}, 1);
-        // String result = sliding_wdw_2_pointer.hard.MinimumWindowSubstring.minWindow("abcdebdde", "bde");
-        String result = sliding_wdw_2_pointer.hard.MinimumWindowSubsequence.minSubSequence("dynamicprogramming", "mm");
-        System.out.println(result);
+        // int result =
+        // sliding_wdw_2_pointer.medium.LongestSubstrWithoutRepeating.longest("pwwkew");
+        // int result = sliding_wdw_2_pointer.medium.MaxConsecutiveOnes3.longest(new
+        // int[]{1,1,1,0,0,0,1,1,1,1}, 0);
+        // int result = sliding_wdw_2_pointer.medium.FruitIntoBaskets.max(new
+        // int[]{1,2,3,2,2});
+        // int result =
+        // sliding_wdw_2_pointer.medium.LongestRepeatingCharReplacement.longest("ABBB",
+        // 2);
+        // int result = sliding_wdw_2_pointer.medium.BinarySubarraysWithSum.count(new
+        // int[]{0,0,0,0,0}, 0);
+        // int result = sliding_wdw_2_pointer.medium.CountNiceSubarr.count(new
+        // int[]{2,2,2,1,2,2,1,2,2,2}, 2);
+        // int result =
+        // sliding_wdw_2_pointer.medium.NumSubstrContainsAll3Chars.count("abcabc");
+        // int result = sliding_wdw_2_pointer.medium.MaxPointsFromCards.max(new
+        // int[]{9,7,7,9,7,7,9}, 7);
+        // int result =
+        // sliding_wdw_2_pointer.hard.LongestSubstrMostKDistinctChars.longest("abcefg",
+        // 1);
+        // int result = sliding_wdw_2_pointer.hard.SubarrwithKDiffInt.count(new
+        // int[]{2,1,1,1,2}, 1);
+        // String result =
+        // sliding_wdw_2_pointer.hard.MinimumWindowSubstring.minWindow("abcdebdde",
+        // "bde");
+        // String result =
+        // sliding_wdw_2_pointer.hard.MinimumWindowSubsequence.minSubSequence("dynamicprogramming",
+        // "mm");
+
+        // Heap and Priority Queue
+        // heap.learning.ImplementationPriorityQueue.Test();
+        // boolean result = heap.learning.IsMaxHeap.isMax(new int[]{9, 15, 10, 7, 12,
+        // 11});
+        // int[] result = heap.learning.ConvertMin2MaxHeap.convert2Min(new int[] { 20,
+        // 18, 10, 12, 9, 9, 3, 5, 6, 8 });
+        // int result = heap.medium.KthLargest.largest(new int[]{3,2,3,1,2,4,5,5,6}, 4);
+        // int result = heap.medium.KthSmallest.smallest(new int[]{7,10,4,3,20,15}, 3);
+        // int[] result = heap.medium.MergeKSortedArrays.merge(new int[][]{{1, 5, 6, 8},
+        // {2, 4, 10, 12}, {3, 7, 9, 11}, {13, 14, 15, 16} });
+        // int[] result = heap.medium.MergekSortedLists.merge(new
+        // int[][]{{1,4,5},{1,3,4},{2,6,8}});
+        // int[] result = heap.medium.ReplaceElementsByRank.replace(new
+        // int[]{20,15,26,2,98,6});
+        // int result = heap.medium.TaskScheduler.taskScheduler(new char[] { 'A' ,'B' ,'A' }, 2);
+        // boolean result = heap.medium.HandofStraights.hands(new int[]{0,1}, 2);
+        // int result = heap.hard.ConnectnRopesMinCost.cost(new int[]{4,3,2,6});
+        // heap.hard.KthLargestElementStream.test();
+        // int[] result = heap.hard.MaximumSumCombinations.maxSumCombo(new int[]{1, 4, 2, 3}, new int[]{2, 5, 1, 6}, 4);
+        // int[] result = heap.hard.TopKFreqElems.topk(new int[]{1,1,1,2,2,3}, 2);
+        heap.hard.FindMedianDataStream.test();
+        // System.out.println(Arrays.toString(result));
     }
 }
