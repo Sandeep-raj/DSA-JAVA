@@ -44,7 +44,7 @@ public class LRUCache {
     /**
      * LRU
      */
-    static class LRU {
+    public static class LRU {
         private int size;
         private DoublyLinkedlist.DLL dll;
         private Hashtable<Integer, DoublyLinkedlist.Node> hashmap;

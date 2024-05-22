@@ -279,7 +279,27 @@ public class Main {
         // heap.hard.KthLargestElementStream.test();
         // int[] result = heap.hard.MaximumSumCombinations.maxSumCombo(new int[]{1, 4, 2, 3}, new int[]{2, 5, 1, 6}, 4);
         // int[] result = heap.hard.TopKFreqElems.topk(new int[]{1,1,1,2,2,3}, 2);
-        heap.hard.FindMedianDataStream.test();
-        // System.out.println(Arrays.toString(result));
+        // heap.hard.FindMedianDataStream.test();
+
+
+
+        // Greedy Algorithm
+        // int result = greedy.easy.AssignCookies.assign(new int[]{10,9,8,7}, new int[]{5,6,7,8});
+        // double result = greedy.easy.FractionalKnapsack.Fractional(new int[]{10,20,30}, new int[]{60,100,120}, 50);
+        // int result = greedy.easy.FindMinCoins.min(new int[]{9, 6, 5, 1}, 11);
+        // boolean result = greedy.easy.LemonadeChange.change(new int[]{5,5,10,10,5,20,5,10,5,5});
+        // boolean result = greedy.easy.ValidParenthesis.valid("(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())");
+        // int result = greedy.med_hard.NMeetingsOneRoom.max(new int[]{1,3,0,5,8,5}, new int[]{2,4,6,7,9,9});
+        // boolean result = greedy.med_hard.JumpGame.jump(new int[]{3,2,1,0,4});
+        // int result = greedy.med_hard.JumpGameII.min(new int[]{7,0,9,6,9,6,1,7,9,0,1,2,9,0,3});
+        // int result = greedy.med_hard.MinimumPlatforms.min(new int[]{900, 940, 950, 1100, 1500, 1800}, new int[]{910, 1200, 1120, 1130, 1900, 2000});
+        // int[] result = greedy.med_hard.JobSequencing.scheduling(new int[][]{{1,4,20} , {2,1,10}, {3,1,40}, {4,1,30}});
+        // int result = greedy.med_hard.Candy.candy(new int[]{1,3,4,5,2});
+        // int result = greedy.med_hard.ShortestJobFirst.shortest(new int[]{1,2,3,4});
+        // int result = greedy.med_hard.PageFaultsLRU.faults(new int[]{5, 0, 1, 3, 2, 4, 1, 0, 5}, 4);
+        // int[][] result = greedy.med_hard.InsertInterval.insert(new int[][]{{2,5},{6,7},{8,9}}, new int[]{0,1});
+        // int[][] result = greedy.med_hard.MergeIntervals.merge(new int[][]{{1,4} , {0,0}});
+        int result = greedy.med_hard.NonOverlappingIntervals.erase(new int[][]{{1,3},{-100,-3},{3,5},{4,7},{0,0},{-3,-1}});
+        System.out.println(result);
     }
 }
