@@ -2,8 +2,8 @@ package stack_queues.learning;
 
 public class DoublyLinkedlist {
     public static class Node {
-        private int key;
-        private int value;
+        public int key;
+        public int value;
         public Node Next;
         public Node Last;
 

@@ -299,7 +299,32 @@ public class Main {
         // int result = greedy.med_hard.PageFaultsLRU.faults(new int[]{5, 0, 1, 3, 2, 4, 1, 0, 5}, 4);
         // int[][] result = greedy.med_hard.InsertInterval.insert(new int[][]{{2,5},{6,7},{8,9}}, new int[]{0,1});
         // int[][] result = greedy.med_hard.MergeIntervals.merge(new int[][]{{1,4} , {0,0}});
-        int result = greedy.med_hard.NonOverlappingIntervals.erase(new int[][]{{1,3},{-100,-3},{3,5},{4,7},{0,0},{-3,-1}});
-        System.out.println(result);
+        // int result = greedy.med_hard.NonOverlappingIntervals.erase(new int[][]{{1,3},{-100,-3},{3,5},{4,7},{0,0},{-3,-1}});
+
+
+        // LinkedList
+        // linkedlist.learn.LinkedList.test();
+        // linkedlist.learn.DoublyLinkedList.test();
+        // linkedlist.ll_medium.MiddleLinkedList.getMiddle(new int[]{1});
+        // linkedlist.ll_medium.ReverseLinkedList.reverse(new int[]{1,2,3,4,5});
+        // linkedlist.ll_medium.LinkedListCycle.cycle(new int[]{}, 5);
+        // linkedlist.ll_medium.LinkedListCycleII.cycle(new int[]{1,2,3,4,5}, 3);
+        // linkedlist.ll_medium.PalindromeLinkedList.isPallindrome(new int[]{1,2,3,2,1});
+        // linkedlist.ll_medium.OddEvenLinkedList.oell(new int[]{2,1,3,5,6,4,7});
+        // linkedlist.ll_medium.RemoveNthNodeFromEnd.remove(new int[]{1,2,3,4,5}, 5);
+        // linkedlist.ll_medium.DeleteMiddleNodeLinkedList.delete(new int[]{2,1});
+        // linkedlist.ll_medium.SortList.sort(new int[]{4,2,1,3});
+        // linkedlist.ll_medium.sort012.sort(new int[]{1,2,2,1,2,0,2,2,0});
+        // linkedlist.ll_medium.Intersection2LinkedLists.intersection(new int[]{1}, new int[]{2}, new int[]{1});
+        // linkedlist.ll_medium.Add1toNumberLL.add1(new int[]{9}, 1);
+        // linkedlist.ll_medium.AddTwoNumbers.add2nums(new int[]{1,3,5}, new int[]{2,4,6});
+        // linkedlist.dll_medium.DeleteAllOccurrences.delete(new int[]{2,2,10,8,4,2,5,2}, 2);
+        // linkedlist.dll_medium.FindPairsSum.find(new int[]{1,5,6}, 6);
+        // linkedlist.dll_medium.RemoveDuplicates.remove(new int[]{1,1,1,2,2,3,3,3,4,4,4,4,4});
+        // linkedlist.ll_hard.ReverseNodeskGroup.reverse(new int[]{1,2,3,4,5,6}, 6);
+        // linkedlist.ll_hard.RotateList.rotate(new int[]{1,2,3,4,5}, 5);
+        // linkedlist.ll_hard.FlatteningLinkedList.flatten(new int[][]{{5,7,8,30}, {10,20}, {19,22,50}, {28,35,40,45}});
+        linkedlist.ll_hard.CopyListRandomPointer.copy(new int[]{1,2,3,4,5,6,7,8,9});
+        // System.out.println(result);
     }
 }
