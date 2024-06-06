@@ -324,7 +324,54 @@ public class Main {
         // linkedlist.ll_hard.ReverseNodeskGroup.reverse(new int[]{1,2,3,4,5,6}, 6);
         // linkedlist.ll_hard.RotateList.rotate(new int[]{1,2,3,4,5}, 5);
         // linkedlist.ll_hard.FlatteningLinkedList.flatten(new int[][]{{5,7,8,30}, {10,20}, {19,22,50}, {28,35,40,45}});
-        linkedlist.ll_hard.CopyListRandomPointer.copy(new int[]{1,2,3,4,5,6,7,8,9});
-        // System.out.println(result);
+        // linkedlist.ll_hard.CopyListRandomPointer.copy(new int[]{1,2,3,4,5,6,7,8,9});
+
+        // Binary Tree
+        // binary_tree.traversal.TreeTraversal.binTraversal();
+        // int result = binary_tree.medium.HeightOfTree.height(new int[]{3,1,2});
+        // boolean result = binary_tree.medium.BalancedBinaryTree.check(new int[]{1,3,2,5,4,-1,-1,7,6});
+        // int result = binary_tree.medium.DiameterofBinaryTree.diameter(new int[]{1,2,3,-1,-1, 4, 7, 5, -1, -1, 8, 6, -1, -1, 9});
+        // int result = binary_tree.medium.BinaryTreeMaximumPathSum.maxsum(new int[]{-2,2,1});
+        // boolean result = binary_tree.medium.SameTree.same(new int[]{1,2,1}, new int[]{1,1,2});
+        // String result = binary_tree.medium.ZigzagLevelOrderTraversal.zigzag(new int[]{1,2,3,-1,-1, 4, 7, 5, -1, -1, 8, 6, -1, -1, 9});
+        // int[] result = binary_tree.medium.BoundaryTraversalBinaryTree.boundary(new int[]{10, 5, 20, 3, 8, 18, 25, -1, 7, -1, -1});
+        // int[][] result = binary_tree.medium.VerticalOrderTraversalBinaryTree.vertical(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int[] result = binary_tree.medium.TopViewBinaryTree.top(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int[] result = binary_tree.medium.BottomViewBinaryTree.bottom(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int[] result = binary_tree.medium.BinaryTreeRightSideView.right(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // boolean result = binary_tree.medium.SymmetricTree.symm(new int[]{1,2,2,3,-1,-1,3});
+        // String[] result = binary_tree.hard.RoottoLeafPaths.paths(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int result = binary_tree.hard.LCAfor2Nodes.lca(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6}, 6, 10);
+        // int result = binary_tree.hard.MaximumWidthBinaryTree.maxwidth(new int[]{1,3,2,5,-1,-1,9,6,-1,7});
+        // binary_tree.hard.ChildrenSumProperty.childrenSumProperty(new int[]{50, 7, 2, 3, 5, 1, 30});
+        // int[] result = binary_tree.hard.AllNodesDistanceKBinaryTree.kdist(new int[]{3,5,1,6,2,0,8,-1,-1,7,4}, 2, 5);
+        // int result = binary_tree.hard.BurningTree.burn(new int[]{3,5,1,6,2,0,8,-1,-1,7,4}, 5);
+        // int result = binary_tree.hard.CountNumberNodesBinaryTree.count(new int[]{2, 4, 3, 5, 9, 8, 7, 1, 6});
+        // binary_tree.hard.ConstructBTPreorder_Inorder.contruct(new int[]{3,9,20,15,7}, new int[]{9,3,15,20,7});
+        // binary_tree.hard.ConstructBTInorder_Postorder.contruct(new int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
+        // binary_tree.hard.SerializeDeserializeBinaryTree.serialize_deserailize(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // String result =  binary_tree.hard.MorrisPreorderTraversalBT.morrisPreorder(new int[]{1,2,3,4,5,-1,-1,-1,-1,-1,6});
+        // String result =  binary_tree.hard.MorrisInorderTraversalBT.inorder(new int[]{1,2,3,4,5,-1,-1,-1,-1,-1,6});
+        // binary_tree.hard.FlattenBinaryTreeLinkedList.flatten(new int[]{1, 2, 5 ,3, 4, -1, 6, -1, -1, -1, -1, 7});
+
+
+
+        // Binary Search Tree
+        // String result = binary_search_tree.easy.SearchInBST.search(new int[]{4,2,7,1,3}, 5);
+        // int[] result = binary_search_tree.easy.MinMaxinBST.minmax(new int[]{5,4,6,3,-1,-1,7,1});
+        // int result = binary_search_tree.medium.CeilInBST.ceil(new int[]{7, 5 ,12, 4, 7, 10, 14, -1, -1, 6, -1, -1, -1, 13}, 54);
+        // int result = binary_search_tree.medium.FloorInBST.floor(new int[]{8, 5, 12, 4, 7, 10, 14, -1, -1, 6, -1, -1, -1, 13}, 9);
+        // String result = binary_search_tree.medium.InsertintoBST.insert(new int[]{4,2,7,1,3,-1,-1,-1,-1,-1,-1}, 5);
+        // String result = binary_search_tree.medium.DeleteNodeBST.delete(new int[]{5,3,6,2,4,-1,7}, 0);
+        // int result = binary_search_tree.medium.KthSmallestElemBST.kth(new int[]{5,3,6,2,4,-1,-1,1}, 3);
+        // boolean result = binary_search_tree.medium.ValidateBST.validate(new int[]{5,1,4,-1,-1,3,6});
+        // int result = binary_search_tree.medium.LCAofBST.lca(new int[]{6,2,8,0,4,7,9,-1,-1,3,5}, 0, 5);
+        // String result = binary_search_tree.medium.ConstructBSTfromPreorder.construct(new int[]{8,5,1,7,10,12});
+        // int[] result = binary_search_tree.medium.PredecessorAndSuccessor.find(new int[]{10,2,11,1,5,-1,-1,-1,-1,3,6,-1,4}, 10);
+        // binary_search_tree.medium.BSTIterator.test();
+        // boolean result = binary_search_tree.medium.TwoSumIVInputBST.twosum(new int[]{5,3,6,2,4,-1,7}, 11);
+        // String result = binary_search_tree.medium.RecoverBST.recover(new int[]{3,1,4,-1,-1,2});
+        int result = binary_search_tree.medium.LargestBST.largest(new int[]{6,6,3,-1,2,9,3,-1,8,8,2});
+        System.out.println(result);
     }
 }
