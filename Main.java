@@ -273,34 +273,45 @@ public class Main {
         // int[][]{{1,4,5},{1,3,4},{2,6,8}});
         // int[] result = heap.medium.ReplaceElementsByRank.replace(new
         // int[]{20,15,26,2,98,6});
-        // int result = heap.medium.TaskScheduler.taskScheduler(new char[] { 'A' ,'B' ,'A' }, 2);
+        // int result = heap.medium.TaskScheduler.taskScheduler(new char[] { 'A' ,'B'
+        // ,'A' }, 2);
         // boolean result = heap.medium.HandofStraights.hands(new int[]{0,1}, 2);
         // int result = heap.hard.ConnectnRopesMinCost.cost(new int[]{4,3,2,6});
         // heap.hard.KthLargestElementStream.test();
-        // int[] result = heap.hard.MaximumSumCombinations.maxSumCombo(new int[]{1, 4, 2, 3}, new int[]{2, 5, 1, 6}, 4);
+        // int[] result = heap.hard.MaximumSumCombinations.maxSumCombo(new int[]{1, 4,
+        // 2, 3}, new int[]{2, 5, 1, 6}, 4);
         // int[] result = heap.hard.TopKFreqElems.topk(new int[]{1,1,1,2,2,3}, 2);
         // heap.hard.FindMedianDataStream.test();
 
-
-
         // Greedy Algorithm
-        // int result = greedy.easy.AssignCookies.assign(new int[]{10,9,8,7}, new int[]{5,6,7,8});
-        // double result = greedy.easy.FractionalKnapsack.Fractional(new int[]{10,20,30}, new int[]{60,100,120}, 50);
+        // int result = greedy.easy.AssignCookies.assign(new int[]{10,9,8,7}, new
+        // int[]{5,6,7,8});
+        // double result = greedy.easy.FractionalKnapsack.Fractional(new
+        // int[]{10,20,30}, new int[]{60,100,120}, 50);
         // int result = greedy.easy.FindMinCoins.min(new int[]{9, 6, 5, 1}, 11);
-        // boolean result = greedy.easy.LemonadeChange.change(new int[]{5,5,10,10,5,20,5,10,5,5});
-        // boolean result = greedy.easy.ValidParenthesis.valid("(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())");
-        // int result = greedy.med_hard.NMeetingsOneRoom.max(new int[]{1,3,0,5,8,5}, new int[]{2,4,6,7,9,9});
+        // boolean result = greedy.easy.LemonadeChange.change(new
+        // int[]{5,5,10,10,5,20,5,10,5,5});
+        // boolean result =
+        // greedy.easy.ValidParenthesis.valid("(((()))())))*))())()(**(((())(()(*()((((())))*())(())*(*(()(*)))()*())**((()(()))())(*(*))*))())");
+        // int result = greedy.med_hard.NMeetingsOneRoom.max(new int[]{1,3,0,5,8,5}, new
+        // int[]{2,4,6,7,9,9});
         // boolean result = greedy.med_hard.JumpGame.jump(new int[]{3,2,1,0,4});
-        // int result = greedy.med_hard.JumpGameII.min(new int[]{7,0,9,6,9,6,1,7,9,0,1,2,9,0,3});
-        // int result = greedy.med_hard.MinimumPlatforms.min(new int[]{900, 940, 950, 1100, 1500, 1800}, new int[]{910, 1200, 1120, 1130, 1900, 2000});
-        // int[] result = greedy.med_hard.JobSequencing.scheduling(new int[][]{{1,4,20} , {2,1,10}, {3,1,40}, {4,1,30}});
+        // int result = greedy.med_hard.JumpGameII.min(new
+        // int[]{7,0,9,6,9,6,1,7,9,0,1,2,9,0,3});
+        // int result = greedy.med_hard.MinimumPlatforms.min(new int[]{900, 940, 950,
+        // 1100, 1500, 1800}, new int[]{910, 1200, 1120, 1130, 1900, 2000});
+        // int[] result = greedy.med_hard.JobSequencing.scheduling(new int[][]{{1,4,20}
+        // , {2,1,10}, {3,1,40}, {4,1,30}});
         // int result = greedy.med_hard.Candy.candy(new int[]{1,3,4,5,2});
         // int result = greedy.med_hard.ShortestJobFirst.shortest(new int[]{1,2,3,4});
-        // int result = greedy.med_hard.PageFaultsLRU.faults(new int[]{5, 0, 1, 3, 2, 4, 1, 0, 5}, 4);
-        // int[][] result = greedy.med_hard.InsertInterval.insert(new int[][]{{2,5},{6,7},{8,9}}, new int[]{0,1});
-        // int[][] result = greedy.med_hard.MergeIntervals.merge(new int[][]{{1,4} , {0,0}});
-        // int result = greedy.med_hard.NonOverlappingIntervals.erase(new int[][]{{1,3},{-100,-3},{3,5},{4,7},{0,0},{-3,-1}});
-
+        // int result = greedy.med_hard.PageFaultsLRU.faults(new int[]{5, 0, 1, 3, 2, 4,
+        // 1, 0, 5}, 4);
+        // int[][] result = greedy.med_hard.InsertInterval.insert(new
+        // int[][]{{2,5},{6,7},{8,9}}, new int[]{0,1});
+        // int[][] result = greedy.med_hard.MergeIntervals.merge(new int[][]{{1,4} ,
+        // {0,0}});
+        // int result = greedy.med_hard.NonOverlappingIntervals.erase(new
+        // int[][]{{1,3},{-100,-3},{3,5},{4,7},{0,0},{-3,-1}});
 
         // LinkedList
         // linkedlist.learn.LinkedList.test();
@@ -309,69 +320,205 @@ public class Main {
         // linkedlist.ll_medium.ReverseLinkedList.reverse(new int[]{1,2,3,4,5});
         // linkedlist.ll_medium.LinkedListCycle.cycle(new int[]{}, 5);
         // linkedlist.ll_medium.LinkedListCycleII.cycle(new int[]{1,2,3,4,5}, 3);
-        // linkedlist.ll_medium.PalindromeLinkedList.isPallindrome(new int[]{1,2,3,2,1});
+        // linkedlist.ll_medium.PalindromeLinkedList.isPallindrome(new
+        // int[]{1,2,3,2,1});
         // linkedlist.ll_medium.OddEvenLinkedList.oell(new int[]{2,1,3,5,6,4,7});
         // linkedlist.ll_medium.RemoveNthNodeFromEnd.remove(new int[]{1,2,3,4,5}, 5);
         // linkedlist.ll_medium.DeleteMiddleNodeLinkedList.delete(new int[]{2,1});
         // linkedlist.ll_medium.SortList.sort(new int[]{4,2,1,3});
         // linkedlist.ll_medium.sort012.sort(new int[]{1,2,2,1,2,0,2,2,0});
-        // linkedlist.ll_medium.Intersection2LinkedLists.intersection(new int[]{1}, new int[]{2}, new int[]{1});
+        // linkedlist.ll_medium.Intersection2LinkedLists.intersection(new int[]{1}, new
+        // int[]{2}, new int[]{1});
         // linkedlist.ll_medium.Add1toNumberLL.add1(new int[]{9}, 1);
-        // linkedlist.ll_medium.AddTwoNumbers.add2nums(new int[]{1,3,5}, new int[]{2,4,6});
-        // linkedlist.dll_medium.DeleteAllOccurrences.delete(new int[]{2,2,10,8,4,2,5,2}, 2);
+        // linkedlist.ll_medium.AddTwoNumbers.add2nums(new int[]{1,3,5}, new
+        // int[]{2,4,6});
+        // linkedlist.dll_medium.DeleteAllOccurrences.delete(new
+        // int[]{2,2,10,8,4,2,5,2}, 2);
         // linkedlist.dll_medium.FindPairsSum.find(new int[]{1,5,6}, 6);
-        // linkedlist.dll_medium.RemoveDuplicates.remove(new int[]{1,1,1,2,2,3,3,3,4,4,4,4,4});
+        // linkedlist.dll_medium.RemoveDuplicates.remove(new
+        // int[]{1,1,1,2,2,3,3,3,4,4,4,4,4});
         // linkedlist.ll_hard.ReverseNodeskGroup.reverse(new int[]{1,2,3,4,5,6}, 6);
         // linkedlist.ll_hard.RotateList.rotate(new int[]{1,2,3,4,5}, 5);
-        // linkedlist.ll_hard.FlatteningLinkedList.flatten(new int[][]{{5,7,8,30}, {10,20}, {19,22,50}, {28,35,40,45}});
+        // linkedlist.ll_hard.FlatteningLinkedList.flatten(new int[][]{{5,7,8,30},
+        // {10,20}, {19,22,50}, {28,35,40,45}});
         // linkedlist.ll_hard.CopyListRandomPointer.copy(new int[]{1,2,3,4,5,6,7,8,9});
 
         // Binary Tree
         // binary_tree.traversal.TreeTraversal.binTraversal();
         // int result = binary_tree.medium.HeightOfTree.height(new int[]{3,1,2});
-        // boolean result = binary_tree.medium.BalancedBinaryTree.check(new int[]{1,3,2,5,4,-1,-1,7,6});
-        // int result = binary_tree.medium.DiameterofBinaryTree.diameter(new int[]{1,2,3,-1,-1, 4, 7, 5, -1, -1, 8, 6, -1, -1, 9});
-        // int result = binary_tree.medium.BinaryTreeMaximumPathSum.maxsum(new int[]{-2,2,1});
-        // boolean result = binary_tree.medium.SameTree.same(new int[]{1,2,1}, new int[]{1,1,2});
-        // String result = binary_tree.medium.ZigzagLevelOrderTraversal.zigzag(new int[]{1,2,3,-1,-1, 4, 7, 5, -1, -1, 8, 6, -1, -1, 9});
-        // int[] result = binary_tree.medium.BoundaryTraversalBinaryTree.boundary(new int[]{10, 5, 20, 3, 8, 18, 25, -1, 7, -1, -1});
-        // int[][] result = binary_tree.medium.VerticalOrderTraversalBinaryTree.vertical(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
-        // int[] result = binary_tree.medium.TopViewBinaryTree.top(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
-        // int[] result = binary_tree.medium.BottomViewBinaryTree.bottom(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
-        // int[] result = binary_tree.medium.BinaryTreeRightSideView.right(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
-        // boolean result = binary_tree.medium.SymmetricTree.symm(new int[]{1,2,2,3,-1,-1,3});
-        // String[] result = binary_tree.hard.RoottoLeafPaths.paths(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
-        // int result = binary_tree.hard.LCAfor2Nodes.lca(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6}, 6, 10);
-        // int result = binary_tree.hard.MaximumWidthBinaryTree.maxwidth(new int[]{1,3,2,5,-1,-1,9,6,-1,7});
-        // binary_tree.hard.ChildrenSumProperty.childrenSumProperty(new int[]{50, 7, 2, 3, 5, 1, 30});
-        // int[] result = binary_tree.hard.AllNodesDistanceKBinaryTree.kdist(new int[]{3,5,1,6,2,0,8,-1,-1,7,4}, 2, 5);
-        // int result = binary_tree.hard.BurningTree.burn(new int[]{3,5,1,6,2,0,8,-1,-1,7,4}, 5);
-        // int result = binary_tree.hard.CountNumberNodesBinaryTree.count(new int[]{2, 4, 3, 5, 9, 8, 7, 1, 6});
-        // binary_tree.hard.ConstructBTPreorder_Inorder.contruct(new int[]{3,9,20,15,7}, new int[]{9,3,15,20,7});
-        // binary_tree.hard.ConstructBTInorder_Postorder.contruct(new int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
-        // binary_tree.hard.SerializeDeserializeBinaryTree.serialize_deserailize(new int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
-        // String result =  binary_tree.hard.MorrisPreorderTraversalBT.morrisPreorder(new int[]{1,2,3,4,5,-1,-1,-1,-1,-1,6});
-        // String result =  binary_tree.hard.MorrisInorderTraversalBT.inorder(new int[]{1,2,3,4,5,-1,-1,-1,-1,-1,6});
-        // binary_tree.hard.FlattenBinaryTreeLinkedList.flatten(new int[]{1, 2, 5 ,3, 4, -1, 6, -1, -1, -1, -1, 7});
-
-
+        // boolean result = binary_tree.medium.BalancedBinaryTree.check(new
+        // int[]{1,3,2,5,4,-1,-1,7,6});
+        // int result = binary_tree.medium.DiameterofBinaryTree.diameter(new
+        // int[]{1,2,3,-1,-1, 4, 7, 5, -1, -1, 8, 6, -1, -1, 9});
+        // int result = binary_tree.medium.BinaryTreeMaximumPathSum.maxsum(new
+        // int[]{-2,2,1});
+        // boolean result = binary_tree.medium.SameTree.same(new int[]{1,2,1}, new
+        // int[]{1,1,2});
+        // String result = binary_tree.medium.ZigzagLevelOrderTraversal.zigzag(new
+        // int[]{1,2,3,-1,-1, 4, 7, 5, -1, -1, 8, 6, -1, -1, 9});
+        // int[] result = binary_tree.medium.BoundaryTraversalBinaryTree.boundary(new
+        // int[]{10, 5, 20, 3, 8, 18, 25, -1, 7, -1, -1});
+        // int[][] result =
+        // binary_tree.medium.VerticalOrderTraversalBinaryTree.vertical(new int[]{1, 2,
+        // 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int[] result = binary_tree.medium.TopViewBinaryTree.top(new int[]{1, 2, 3, 4,
+        // 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int[] result = binary_tree.medium.BottomViewBinaryTree.bottom(new int[]{1, 2,
+        // 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int[] result = binary_tree.medium.BinaryTreeRightSideView.right(new int[]{1,
+        // 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // boolean result = binary_tree.medium.SymmetricTree.symm(new
+        // int[]{1,2,2,3,-1,-1,3});
+        // String[] result = binary_tree.hard.RoottoLeafPaths.paths(new int[]{1, 2, 3,
+        // 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // int result = binary_tree.hard.LCAfor2Nodes.lca(new int[]{1, 2, 3, 4, 10, 9,
+        // 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6}, 6, 10);
+        // int result = binary_tree.hard.MaximumWidthBinaryTree.maxwidth(new
+        // int[]{1,3,2,5,-1,-1,9,6,-1,7});
+        // binary_tree.hard.ChildrenSumProperty.childrenSumProperty(new int[]{50, 7, 2,
+        // 3, 5, 1, 30});
+        // int[] result = binary_tree.hard.AllNodesDistanceKBinaryTree.kdist(new
+        // int[]{3,5,1,6,2,0,8,-1,-1,7,4}, 2, 5);
+        // int result = binary_tree.hard.BurningTree.burn(new
+        // int[]{3,5,1,6,2,0,8,-1,-1,7,4}, 5);
+        // int result = binary_tree.hard.CountNumberNodesBinaryTree.count(new int[]{2,
+        // 4, 3, 5, 9, 8, 7, 1, 6});
+        // binary_tree.hard.ConstructBTPreorder_Inorder.contruct(new int[]{3,9,20,15,7},
+        // new int[]{9,3,15,20,7});
+        // binary_tree.hard.ConstructBTInorder_Postorder.contruct(new
+        // int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
+        // binary_tree.hard.SerializeDeserializeBinaryTree.serialize_deserailize(new
+        // int[]{1, 2, 3, 4, 10, 9, 11, -1, 5, -1, -1, -1, -1, -1, -1, -1, 6});
+        // String result = binary_tree.hard.MorrisPreorderTraversalBT.morrisPreorder(new
+        // int[]{1,2,3,4,5,-1,-1,-1,-1,-1,6});
+        // String result = binary_tree.hard.MorrisInorderTraversalBT.inorder(new
+        // int[]{1,2,3,4,5,-1,-1,-1,-1,-1,6});
+        // binary_tree.hard.FlattenBinaryTreeLinkedList.flatten(new int[]{1, 2, 5 ,3, 4,
+        // -1, 6, -1, -1, -1, -1, 7});
 
         // Binary Search Tree
-        // String result = binary_search_tree.easy.SearchInBST.search(new int[]{4,2,7,1,3}, 5);
-        // int[] result = binary_search_tree.easy.MinMaxinBST.minmax(new int[]{5,4,6,3,-1,-1,7,1});
-        // int result = binary_search_tree.medium.CeilInBST.ceil(new int[]{7, 5 ,12, 4, 7, 10, 14, -1, -1, 6, -1, -1, -1, 13}, 54);
-        // int result = binary_search_tree.medium.FloorInBST.floor(new int[]{8, 5, 12, 4, 7, 10, 14, -1, -1, 6, -1, -1, -1, 13}, 9);
-        // String result = binary_search_tree.medium.InsertintoBST.insert(new int[]{4,2,7,1,3,-1,-1,-1,-1,-1,-1}, 5);
-        // String result = binary_search_tree.medium.DeleteNodeBST.delete(new int[]{5,3,6,2,4,-1,7}, 0);
-        // int result = binary_search_tree.medium.KthSmallestElemBST.kth(new int[]{5,3,6,2,4,-1,-1,1}, 3);
-        // boolean result = binary_search_tree.medium.ValidateBST.validate(new int[]{5,1,4,-1,-1,3,6});
-        // int result = binary_search_tree.medium.LCAofBST.lca(new int[]{6,2,8,0,4,7,9,-1,-1,3,5}, 0, 5);
-        // String result = binary_search_tree.medium.ConstructBSTfromPreorder.construct(new int[]{8,5,1,7,10,12});
-        // int[] result = binary_search_tree.medium.PredecessorAndSuccessor.find(new int[]{10,2,11,1,5,-1,-1,-1,-1,3,6,-1,4}, 10);
+        // String result = binary_search_tree.easy.SearchInBST.search(new
+        // int[]{4,2,7,1,3}, 5);
+        // int[] result = binary_search_tree.easy.MinMaxinBST.minmax(new
+        // int[]{5,4,6,3,-1,-1,7,1});
+        // int result = binary_search_tree.medium.CeilInBST.ceil(new int[]{7, 5 ,12, 4,
+        // 7, 10, 14, -1, -1, 6, -1, -1, -1, 13}, 54);
+        // int result = binary_search_tree.medium.FloorInBST.floor(new int[]{8, 5, 12,
+        // 4, 7, 10, 14, -1, -1, 6, -1, -1, -1, 13}, 9);
+        // String result = binary_search_tree.medium.InsertintoBST.insert(new
+        // int[]{4,2,7,1,3,-1,-1,-1,-1,-1,-1}, 5);
+        // String result = binary_search_tree.medium.DeleteNodeBST.delete(new
+        // int[]{5,3,6,2,4,-1,7}, 0);
+        // int result = binary_search_tree.medium.KthSmallestElemBST.kth(new
+        // int[]{5,3,6,2,4,-1,-1,1}, 3);
+        // boolean result = binary_search_tree.medium.ValidateBST.validate(new
+        // int[]{5,1,4,-1,-1,3,6});
+        // int result = binary_search_tree.medium.LCAofBST.lca(new
+        // int[]{6,2,8,0,4,7,9,-1,-1,3,5}, 0, 5);
+        // String result =
+        // binary_search_tree.medium.ConstructBSTfromPreorder.construct(new
+        // int[]{8,5,1,7,10,12});
+        // int[] result = binary_search_tree.medium.PredecessorAndSuccessor.find(new
+        // int[]{10,2,11,1,5,-1,-1,-1,-1,3,6,-1,4}, 10);
         // binary_search_tree.medium.BSTIterator.test();
-        // boolean result = binary_search_tree.medium.TwoSumIVInputBST.twosum(new int[]{5,3,6,2,4,-1,7}, 11);
-        // String result = binary_search_tree.medium.RecoverBST.recover(new int[]{3,1,4,-1,-1,2});
-        int result = binary_search_tree.medium.LargestBST.largest(new int[]{6,6,3,-1,2,9,3,-1,8,8,2});
+        // boolean result = binary_search_tree.medium.TwoSumIVInputBST.twosum(new
+        // int[]{5,3,6,2,4,-1,7}, 11);
+        // String result = binary_search_tree.medium.RecoverBST.recover(new
+        // int[]{3,1,4,-1,-1,2});
+        // int result = binary_search_tree.medium.LargestBST.largest(new
+        // int[]{6,6,3,-1,2,9,3,-1,8,8,2});
+
+        // Graphs
+        // graph.learn.Representaion.test();
+        // int result = graph.bfs_dfs.NumberofProvinces.numAlt(new int[][]{{1,1} ,
+        // {1,1}});
+        // int result = graph.bfs_dfs.RottingOranges.rotten(new int[][]{{0,2}});
+        // int[][] result = graph.bfs_dfs.FloodFill.fill(new
+        // int[][]{{1,1,1},{1,1,0},{1,0,1}}, 1, 1, 2);
+        // boolean result = graph.bfs_dfs.DetectCycleBFS.detect(new int[][]{{1}, {0, 2,
+        // 4}, {1, 3}, {2, 4}, {1, 3}}, 5, 5);
+        // boolean result = graph.bfs_dfs.DetectCycleDFS.detect(new int[][]{{}, {2}, {1,
+        // 3}, {2}}, 4, 2);
+        // int[][] result = graph.bfs_dfs.BFS01Matrix.dist(new
+        // int[][]{{0,0,0},{0,1,0},{1,1,1}});
+        // String[][] result = graph.bfs_dfs.SurroundedRegions.surround(new
+        // String[][]{{"X","X","X","X"},{"X","O","O","X"},{"X","X","O","X"},{"X","O","X","X"}});
+        // int result = graph.bfs_dfs.NumberofEnclaves.enclaves(new
+        // int[][]{{0,1,1,0},{0,0,1,0},{0,0,1,0},{0,0,0,0}});
+        // int result = graph.bfs_dfs.WordLadder.ladder("gedk", "geek", new
+        // String[]{"geek", "gefk"});
+        // int result = graph.bfs_dfs.NumberofIslands.number(new
+        // int[][]{{0,1,1,0},{0,1,1,0},{0,0,1,0},{0,0,0,0},{1,1,0,1}});
+        // String result = graph.bfs_dfs.WordLadderII.ladder("gedk", "geek", new
+        // String[]{"geek", "gefk"});
+        // boolean result = graph.bfs_dfs.BipartiteGraph.isbipartite(new
+        // int[][]{{1,3},{0,2},{1,3},{0,2}});
+        // boolean result = graph.bfs_dfs.DetectCycleDirectedGraph.detect(new
+        // int[][]{{1},{2},{3,6},{4},{5},{},{4},{1,8},{9},{}});
+        // int[] result = graph.topologicalSort.TopologicalSort.topological(new
+        // int[][]{{},{},{3},{1},{0,1},{0,2}});
+        // String result = graph.topologicalSort.KahnsAlgorithm.khans(new
+        // int[][]{{},{},{3},{1},{0,1},{0,2}});
+        // boolean result = graph.topologicalSort.DetectCycleDirectedGraph.detect(new
+        // int[][]{{1},{2},{3},{3}});
+        // boolean result = graph.topologicalSort.CourseSchedule.schedule(2, new
+        // int[][]{{1,0},{0,1}});
+        // int[] result = graph.topologicalSort.CourseScheduleII.schedule(4, new
+        // int[][]{{1,0},{2,0},{3,1},{3,2}});
+        // int[] result = graph.topologicalSort.FindEventualSafeStates.find(new
+        // int[][]{{1,2},{2,3},{5},{0},{5},{},{}});
+        // Object[] result = graph.topologicalSort.AlienDictionary.dicts(5, 5, new
+        // String[]{"baa","abcd","abca","cab","cad"});
+        // int[] result = graph.shortest_path_algo.ShortestPathUndirectedGraph.dist(4,
+        // 4, new int[][]{{0,0},{1,1},{1,3},{3,0}}, 3);
+        // int[] result = graph.shortest_path_algo.ShortestPathinDAG.dist(6, 7, new
+        // int[][]{{0,1,2},{0,4,1},{4,5,4},{4,2,2},{1,2,3},{2,3,6},{5,3,1}});
+        // String result = graph.shortest_path_algo.DijkstrasAlgorithm.djikstra(3, 3,
+        // new int[][][]{{{1, 1}, {2, 6}}, {{2, 3}, {0, 1}}, {{1, 3}, {0, 6}}}, 0);
+        // int result = graph.shortest_path_algo.ShortestDistanceBinaryMaze.mindist(new
+        // int[][]{{1, 1, 1, 1},
+        // {1, 1, 0, 1},
+        // {1, 1, 1, 1},
+        // {1, 1, 0, 0},
+        // {1, 0, 0, 1}}, new int[]{0,1}, new int[]{2,2});
+        // int result = graph.shortest_path_algo.PathWithMinimumEffort.minPath(new
+        // int[][]{{1,2,1,1,1},{1,2,1,2,1},{1,2,1,2,1},{1,2,1,2,1},{1,1,1,2,1}});
+        // int result = graph.shortest_path_algo.CheapestFlightsWithinKStops.cheapest(4,
+        // new int[][]{{0,1,100},{1,2,100},{2,0,100},{1,3,600},{2,3,200}}, 0, 3, 1);
+        // int result = graph.shortest_path_algo.NetworkDelayTime.delay(new
+        // int[][]{{2,1,1},{2,3,1},{3,4,1}}, 4, 2);
+        // int result = graph.shortest_path_algo.NumberWaysArriveDestination.ways(7, new
+        // int[][]{{0,6,7},{0,1,2},{1,2,3},{1,3,3},{6,3,3},{3,5,1},{6,5,1},{2,5,1},{0,4,5},{4,6,2}});
+        // int result = graph.shortest_path_algo.MinimumMultiplicationsReachEnd.min(new
+        // int[]{3,4,65}, 7, 66175);
+        // int[] result = graph.shortest_path_algo.BellmanFordAlgorithm.shortest(3, new
+        // int[][]{{0,1,5},{1,0,3},{1,2,-1},{2,0,1}}, 2);
+        // int[][] result = graph.shortest_path_algo.FloydWarshall.shortest(new int[][]{
+        // {0, 2, -1, -1}, {1, 0, 3, -1},{-1, -1, 0, -1},{3, 5, 4, 0} });
+        // int result = graph.shortest_path_algo.CityWithSmallestNumber.findCity(5, new
+        // int[][]{{0,1,2},{0,4,8},{1,2,3},{1,4,2},{2,3,1},{3,4,1}}, 4);
+        // int[][] result = graph.mst_disjoint.PrimsAlgorithmMST.prims(5, new int[][]{
+        // {0, 1, 2}, {0, 2, 1}, {1, 2, 1}, {2, 3, 2}, {3, 4, 1}, {4, 2, 2}});
+        // graph.mst_disjoint.DisjointSet_Rank.test();
+        // graph.mst_disjoint.DisjointSet_Size.test();
+        // graph.mst_disjoint.KruskalsAlgorithm_MST.test();
+        // int result = graph.mst_disjoint.MakeNetworkConnected.makeConnected(9, new
+        // int[][]{{0,1},{0,2},{0,3},{1,2},{1,3}});
+        // int result = graph.mst_disjoint.MostStonesRemoved.remove(6, new int[][]{{0,
+        // 0}, {0, 2}, {1, 3}, {3, 1}, {3, 2}, {4, 3}});
+        // String result = graph.mst_disjoint.AccountsMerge.merge(6,
+        //         new String[][] { { "John", "j1@com", "j2@com", "j3@com" },
+        //                 { "John", "j4@com" },
+        //                 { "Raj", "r1@com", "r2@com" },
+        //                 { "John", "j1@com", "j5@com" },
+        //                 { "Raj", "r2@com", "r3@com" },
+        //                 { "Mary", "m1@com" } });
+        // int[] result = graph.mst_disjoint.NumberofIslandsII.number(4, 5, 12, new int[][]{{0,0},{0,0},{1,1},{1,0},{0,1},{0,3},{1,3},{0,4}, {3,2}, {2,2},{1,2}, {0,2}});
+        // int result = graph.mst_disjoint.MakingALargeIsland.makin(new int[][]{{1,1,0,1,1,0},{1,1,0,1,1,0},{1,1,0,1,1,0},{0,0,1,0,0,0},{0,0,1,1,1,0},{0,0,1,1,1,0}});
+        // int result = graph.mst_disjoint.SwimInRisingWater.swim(new int[][]{{3,2},{0,1}});
+        // int[][] result = graph.other.TarjansAlgo.criticalConnections(12, new int[][]{{1,2},{1,4},{2,3},{4,3},{4,5},{5,6},{6,7},{6,9},{7,8},{9,8},{8,10},{10,12},{10,11}});
+        // int[] result = graph.other.ArticulationPoint.criticalPoint(7, new int[][]{{0,1},{0,2},{0,3},{2,3},{2,4},{2,5},{4,6},{5,6}});
+        int result = graph.other.KosarajusAlgorithm.stronglyConnectedComponents(8, new int[][]{{0,1},{1,2},{2,0},{2,3},{3,4},{4,5},{5,6},{6,4},{6,7},{4,7}});
         System.out.println(result);
     }
 }
