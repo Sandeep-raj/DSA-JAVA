@@ -518,7 +518,45 @@ public class Main {
         // int result = graph.mst_disjoint.SwimInRisingWater.swim(new int[][]{{3,2},{0,1}});
         // int[][] result = graph.other.TarjansAlgo.criticalConnections(12, new int[][]{{1,2},{1,4},{2,3},{4,3},{4,5},{5,6},{6,7},{6,9},{7,8},{9,8},{8,10},{10,12},{10,11}});
         // int[] result = graph.other.ArticulationPoint.criticalPoint(7, new int[][]{{0,1},{0,2},{0,3},{2,3},{2,4},{2,5},{4,6},{5,6}});
-        int result = graph.other.KosarajusAlgorithm.stronglyConnectedComponents(8, new int[][]{{0,1},{1,2},{2,0},{2,3},{3,4},{4,5},{5,6},{6,4},{6,7},{4,7}});
+        // int result = graph.other.KosarajusAlgorithm.stronglyConnectedComponents(8, new int[][]{{0,1},{1,2},{2,0},{2,3},{3,4},{4,5},{5,6},{6,4},{6,7},{4,7}});
+
+
+
+        // Recursion
+        // int result = recursion.basic.AtoI.atoi("42");
+        // float result = recursion.basic.Pow.pow(2, 10);
+        // long result = recursion.basic.CountGoodNumbers.count(50);
+        // String result= recursion.basic.SortStack.sort(new int[]{11 ,2 ,32 ,3 ,41});
+        // String result = recursion.basic.ReverseStack.reverse(new int[]{3,2,1,7,6});
+        // String result = recursion.subsequence.GenBinStr.binStr(4);
+        /// String result = recursion.subsequence.GenerateParentheses.generate(3);
+        // String result = recursion.subsequence.Subsets.subsets(new int[]{0});
+        // String result = recursion.subsequence.BetterString.better("a", "n");
+        // int result = recursion.subsequence.PerfectSumProblem.perfectSum(new int[]{5, 2, 3, 10, 6, 8}, 10);
+        // String result = recursion.subsequence.CombinationSum.combination(new int[]{2,3,5}, 8);
+        // String result = recursion.subsequence.CombinationSumII.combo(new int[]{10,1,2,7,6,1,5}, 8);
+        // String result = recursion.subsequence.SubsetSums.subsets(new int[]{5, 2, 1});
+        // String result = recursion.subsequence.SubsetsII.subsetsII(new int[]{1,2,2});
+        // String result = recursion.subsequence.CombinationSumIII.combo3(4, 1);
+        // String result = recursion.subsequence.LetterComboPhoneNum.letterCombo("1");
+        // String result = recursion.hard.PalindromePartitioning.parts("aabb");
+        // boolean result = recursion.hard.WordSearch.search(new String[][]{{"A","B","C","E"},{"S","F","C","S"},{"A","D","E","E"}}, "SEE");
+        // String result = recursion.hard.NQueens.nQueen(4);
+        // String result = recursion.hard.RatInMaze.ratmaze(new int[][]{{1, 0, 0, 0},{1, 1, 0, 1},{1, 1, 0, 0}, {0, 1, 1, 1}});
+        // boolean result = recursion.hard.WordBreak.wordBreak("catsandog", new String[]{"cats","dog","sand","and","cat"});
+        // boolean result = recursion.hard.MColoringProblem.color(3, 2, 3, new int[][]{{0,1},{1,2},{0,2}});
+        // String result = recursion.hard.SudokuSolver.sudokuSolver(new char[][]{
+        //     {'9', '5', '7', '.', '1', '3', '.', '8', '4'},
+        //     {'4', '8', '3', '.', '5', '7', '1', '.', '6'},
+        //     {'.', '1', '2', '.', '4', '9', '5', '3', '7'},
+        //     {'1', '7', '.', '3', '.', '4', '9', '.', '2'},
+        //     {'5', '.', '4', '9', '7', '.', '3', '6', '.'},
+        //     {'3', '.', '9', '5', '.', '8', '7', '.', '1'},
+        //     {'8', '4', '5', '7', '9', '.', '6', '1', '3'},
+        //     {'.', '9', '1', '.', '3', '6', '.', '7', '5'},
+        //     {'7', '.', '6', '1', '8', '5', '4', '.', '9'}
+        //     });
+        String result = recursion.hard.ExpressionAddOps.addOps("232", 8);
         System.out.println(result);
     }
 }
