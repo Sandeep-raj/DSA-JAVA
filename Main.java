@@ -556,7 +556,78 @@ public class Main {
         //     {'.', '9', '1', '.', '3', '6', '.', '7', '5'},
         //     {'7', '.', '6', '1', '8', '5', '4', '.', '9'}
         //     });
-        String result = recursion.hard.ExpressionAddOps.addOps("232", 8);
+        // String result = recursion.hard.ExpressionAddOps.addOps("232", 8);
+
+
+        ///// Dynamic Programming
+        // int result = dynamic_programming.OneDimensional.ClimbingStairs.climb(8);
+        // int result = dynamic_programming.OneDimensional.GeekJump.geek(3, new int[]{10, 20, 30, 10});
+        // int result = dynamic_programming.OneDimensional.MinimalCost.minCost(5, 3, new int[]{10, 30, 40, 50, 20});
+        // int result = dynamic_programming.OneDimensional.HouseRobber.rob(new int[]{2,7,9,3,1});
+        // int result = dynamic_programming.OneDimensional.HouseRobberII.houseRob(new int[]{1,2,3});
+        // int result = dynamic_programming.GridDP.GeeksTraining.training(3, new int[][]{{1,2,5},{3,1,1},{3,2,3}});
+        // int result = dynamic_programming.GridDP.UniquePaths.uniqPaths(3, 7);
+        // int result = dynamic_programming.GridDP.UniquePathsII.obstacle(new int[][]{{0,0,0},{0,1,0},{0,0,0}});
+        // int result = dynamic_programming.GridDP.MinimumPathSum.minPath(new int[][]{{1,2,3},{4,5,6}});
+        // int result = dynamic_programming.GridDP.MinimumPathSuminTriangularGrid.minPath(new int[][]{{2}, {3,4}, {6,5,7}, {4,1,8,3}});
+        // int result = dynamic_programming.GridDP.MinFallingPathSum.minSum(new int[][]{{2,1,3},{6,5,4},{7,8,9}});
+        // int result = dynamic_programming.GridDP.ChocolatesPickup.pickup(new int[][]{{3,1,1},{2,5,1},{1,5,5},{2,1,1}}, 4, 3);
+        // boolean result = dynamic_programming.SubsequenceDP.SubsetSum.subsetsum(new int[]{3, 34, 4, 12, 5, 2}, 30);
+        // boolean result = dynamic_programming.SubsequenceDP.PartitionEqualSubsetSum.eqPart(new int[]{1,5,11,5});
+        // int result = dynamic_programming.SubsequenceDP.PartitionArrayMinimizeSumDiff.minDiff(new int[]{2,-1,0,4,-2,-9});
+        // int result = dynamic_programming.SubsequenceDP.PerfectSum.perfectSum(new int[]{5, 2, 3, 10, 6, 8}, 10);
+        // int result = dynamic_programming.SubsequenceDP.PartitionsGivenDiff.partDIff(new int[]{1,1,1,1}, 0);
+        // int result = dynamic_programming.SubsequenceDP.Knapsack01.sack(4, new int[]{4,5,1}, new int[]{1,2,3});
+        // int result = dynamic_programming.SubsequenceDP.CoinChange.coinChange(new int[]{2,5}, 13);
+        // int result = dynamic_programming.AdityaVerma.KnapSack01.knapsack(new int[]{1,2,3}, new int[]{4,5,1}, 3);
+        // boolean result = dynamic_programming.AdityaVerma.SubsetSum.subsetSum(new int[]{3, 34, 4, 12, 5, 2}, 9);
+        // boolean result = dynamic_programming.AdityaVerma.PartitionEqualSubsetSum.equalsubset(new int[]{1,2,3,5});
+        // int result = dynamic_programming.AdityaVerma.PerfectSum.perfectSum(new int[]{2, 5, 1, 4, 3}, 3);
+        // int result = dynamic_programming.AdityaVerma.MinSubsetSumDiff.minDiff(new int[]{2, 5, 8, 4, 3});
+        // int result = dynamic_programming.AdityaVerma.CountSubsetswithDiff.count(new int[]{1, 2, 3, 1, 2}, 1);
+        // int result = dynamic_programming.AdityaVerma.TargetSum.count(new int[]{1, 1, 1, 1, 1}, 3);
+        // int result = dynamic_programming.AdityaVerma.CuttingARod.cutRod(new int[]{1,2,3,4,5,6,7,8}, new int[]{3,5,8,9,10,17,17,20}, 8);
+        // int result = dynamic_programming.AdityaVerma.CoinChange.coinChange(new int[]{1,2,3}, 4);
+        // int result = dynamic_programming.AdityaVerma.CoinChangeMaxWays.maxWays(new int[]{2, 5, 3, 6}, 10);
+        // int result = dynamic_programming.AdityaVerma.LongestCommonSubsequence.lcs("abcde", "ace");
+        // int result = dynamic_programming.AdityaVerma.LongestCommonSubstring.lcsubstring("abcdxyz", "xyzabcd");
+        // String result = dynamic_programming.AdityaVerma.PrintingLCS.lcs("AGGTAB", "GXTXAYB");
+        // int result =  dynamic_programming.AdityaVerma.ShortestCommonSupersequence.shortestSubSeq("AGGTAB", "GXTXAYB");
+        // int[] result = dynamic_programming.AdityaVerma.MinInsertionDeletion.minInsertDeletion("heap", "pea");
+        // int result = dynamic_programming.AdityaVerma.LongestPalindromicSubstring.longestPallindrome("babad");
+        // String result = dynamic_programming.AdityaVerma.PrintShortestCommonSupersequence.print("HELLO", "GEEK");
+        // int result = dynamic_programming.AdityaVerma.LongestRepeatingSubsequence.longest("axxzxy");
+        // boolean result  = dynamic_programming.AdityaVerma.SequencePatternMatching.isSubseq("axc", "ahbgdc");
+        // int result = dynamic_programming.AdityaVerma.MinDeletionMakeStringPalindrome.deletes("aebcbda");
+        // int result = dynamic_programming.AdityaVerma.MCM.mcm(new int[]{10, 20, 30});
+        // int result = dynamic_programming.AdityaVerma.PalindromePartitioning.parts("ababbbabbababa");
+        // int result = dynamic_programming.AdityaVerma.BooleanParenthesization.eval("T|T&F^T");
+        // boolean result = dynamic_programming.AdityaVerma.ScrambledString.isScramble("abcde", "caebd");
+        // int result = dynamic_programming.AdityaVerma.EggDropping.minDrops(1, 2);
+        // int result = dynamic_programming.AdityaVerma.DiameterBinaryTree.diameter(new int[]{1,2,3,4,5,-1,-1,8,-1,-1,11,12,-1,-1,14,13});
+        // int result = dynamic_programming.AdityaVerma.MaximumPathSumAnyNode.maxPathSum(new int[]{10,2,-25,20,1,3,4});
+        // int result = dynamic_programming.AdityaVerma.MaximumPathSumFromLeaves.maxPathSum(new int[]{-15,5,6,-8,1,3,9,2,6,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,4,-2,-1,-1,10,-1});
+        // String result = dynamic_programming.DPStrings.PrintAllLCSSequences.print("abaaa", "baabaca");
+        // int result = dynamic_programming.DPStrings.DistinctSubsequences.distinctSubseq("rabbbit", "rabbit");
+        // int result = dynamic_programming.DPStrings.EditDistance.editDistance("horse", "ros");
+        // boolean result = dynamic_programming.DPStrings.WildcardMatching.match("aa", "?a");
+        // int result = dynamic_programming.DPStocks.BuyAndSellStock.maxProfit(new int[]{7,6,4,3,1});
+        // int result = dynamic_programming.DPStocks.BuyAndSellStock2.maxProf(new int[]{1,2,3,4,5});
+        // int result = dynamic_programming.DPStocks.BuyAndSellStock3.maxProf(new int[]{3,3,5,0,0,3,1,4});
+        // int result = dynamic_programming.DPStocks.BuyAndSellStock4.maxprof(2, new int[]{3,2,6,5,0,3});
+        // int result = dynamic_programming.DPStocks.BuyAndSellStock5.maxProf(new int[]{1,2,3,0,2});
+        // int result = dynamic_programming.DPStocks.BuyAndSellStock6.maxprof(new int[]{1,3,7,5,10,3}, 3);
+        // int result = dynamic_programming.LIS.LongestIncreasingSubsequence.lis(new int[]{10,9,2,5,3,7,101,18});
+        // String result = dynamic_programming.LIS.PrintLIS.print(new int[]{0,8,4,12,2,10,6,14,1,9,5,13,3,11,7,15});
+        // int result = dynamic_programming.LIS.LIS_BinarySearch.seqlen(new int[]{4,10,4,3,8,9});
+        // String result = dynamic_programming.LIS.LargestDivisibleSubset.subset(new int[]{2,4});
+        // int result = dynamic_programming.LIS.LongestStringChain.longest(new String[]{"xbc","pcxbcf","xb","cxbc","pcxbc"});
+        // int result = dynamic_programming.LIS.LongestBitonicSubsequence.longestBitonic(new int[]{1, 11, 2, 10, 4, 5, 2, 1});
+        // int result = dynamic_programming.LIS.NumberLIS.countLIS(new int[]{2,2,2,2,2});
+        // int result = dynamic_programming.MCM.MCM.mcm(new int[]{40, 20, 30, 10, 30});
+        // int result = dynamic_programming.MCM.MinCostCutStick.minCost(30, new int[]{13,25,16,20,26,5,27,8,23,14,6,15,21,24,29,1,19,9,3});
+        // int result = dynamic_programming.MCM.BurstBalloons.burst(new int[]{3,1,5,8});
+        int result = dynamic_programming.MCM.PartitionArrayMaxSum.maxSum(new int[]{1,15,7,9,2,5,10}, 3);
         System.out.println(result);
     }
 }
