@@ -1,0 +1,42 @@
+Content Sequence 
+
+KnapSack
+
+1.       KnapSack01.java
+2.       SubsetSum.java
+3.       TargetSum.java
+4.       PartitionEqualSubsetSum.java
+5.       PerfectSum.java
+6.       MinSubsetSumDiff.java
+7.       CountSubsetswithDiff.java
+8.       CoinChange.java
+9.       CoinChangeMaxWays.java
+10.      CuttingARod.java 
+
+
+
+LCS
+
+1.        LongestCommonSubsequence.java
+2.        LongestCommonSubstring.java
+3.        PrintingLCS.java
+4.        ShortestCommonSupersequence.java
+5.        MinInsertionDeletion.java
+6.        LongestPalindromicSubstring.java
+7.        LongestRepeatingSubsequence.java
+8.        MinDeletionMakeStringPalindrome.java
+9.        MinNoDeletionsForPalindrome.java
+10.       PrintShortestCommonSupersequence.java
+11.       SequencePatternMatching.java
+
+
+MCM
+
+1.        MCM.java
+2.        PalindromePartitioning.java
+3.        BooleanParenthesization.java
+4.        ScrambledString.java
+5.        EggDropping.java
+6.        DiameterBinaryTree.java
+7.        MaximumPathSumAnyNode.java
+8.        MaximumPathSumFromLeaves.java
