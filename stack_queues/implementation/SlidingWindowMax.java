@@ -78,3 +78,64 @@ public class SlidingWindowMax {
         return result;
     }
 }
+
+
+/*
+// Better Solution --
+import java.util.ArrayList;
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr = new int[]{4,0,-1,3,5,3,6,8};
+        System.out.println(maxWindow(arr, 2));
+    }
+    
+    static String maxWindow(int[] arr, int k) {
+        ArrayList<Integer> list = new ArrayList();
+        ArrayList<Integer> res = new ArrayList();
+        
+        for(int i = 0; i < k; i++) {
+            if(list.size() == 0) {
+                list.add(i);
+            }else {
+                while(list.size() > 0) {
+                    if(arr[list.get(list.size() - 1)] <= arr[i]) {
+                        list.remove(list.size() - 1);
+                    }else {
+                        break;
+                    }
+                }
+                
+                if(list.size() == 0 || arr[i] < arr[list.get(list.size() - 1)]) {
+                    list.add(i);
+                }
+            }
+        }
+        
+        res.add(arr[list.get(0)]);
+        
+        for(int i = k; i < arr.length; i++) {
+            int removeIdx = i - k;
+            if(list.get(0) == removeIdx) {
+                list.remove(0);
+            }
+            
+            while(list.size() > 0) {
+                if(arr[list.get(list.size() - 1)] <= arr[i]) {
+                    list.remove(list.size() - 1);
+                }else {
+                    break;
+                }
+            }
+            
+            if(list.size() == 0 || arr[list.get(list.size() - 1)] > arr[i]) {
+                list.add(i);
+            }
+            
+            res.add(arr[list.get(0)]);
+        }
+        
+        return res.toString();
+    }
+}
+*/
