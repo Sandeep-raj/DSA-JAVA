@@ -1,0 +1,1974 @@
+Absolutely. I dug further into the *Pure Storage / Everpure MTS interview reports*, including a 2026 Pure Storage onsite report, the 2025 MTS-2 experience, the detailed LeetCode report, and Everpure Glassdoor reports.
+
+The current pattern is especially useful: a recent 2026 candidate described *Algorithm → Concurrency → Design → Design/Coding → HM, while another 2026 candidate described the first two hours as **1 hour algorithms + 1 hour concurrency*. ([Reddit][1])
+
+Also, Pure interviewers appear to care heavily about *how you reason toward the answer*, not merely whether you know the final solution. A 2026 MTS-2 candidate explicitly said questions weren't necessarily difficult, but interviewers expected step-by-step reasoning and discussion of alternatives. ([Reddit][2])
+
+Below is the preparation set I'd use for an *8 YOE / MTS-level candidate*.
+
+---
+
+# Pure Storage / Everpure MTS — 80-question master list
+
+### Legend
+
+* 🔴 *Reported actual* — directly reported by a candidate
+* 🟠 *Strong reconstruction* — based closely on reported round/topic
+* 🟡 *Likely follow-up* — natural interviewer follow-up to an actual question
+* 🟢 *Preparation question* — highly relevant to the reported MTS format
+
+I am deliberately *not presenting reconstructed questions as confirmed leaked questions*.
+
+---
+
+# ROUND 1 — ALGORITHMIC CODING
+
+Recent reports show an algorithm round, and an Everpure Bengaluru MTS candidate specifically reported *string manipulation, pattern matching and sliding window*. Another Everpure candidate described the first round as LC-style coding. ([Glassdoor][3])
+
+## 1. 🔴 Valid Square
+
+*Question:* Given four points (x,y), determine whether they form a square.
+
+*Expected approach:*
+
+Calculate the six pairwise squared distances.
+
+For a valid square:
+
+text
+4 equal smaller distances = sides
+2 equal larger distances = diagonals
+diagonal² = 2 × side²
+
+
+Using squared distances avoids floating-point errors.
+
+*Complexity:* O(1).
+
+This is one of the explicitly reported Pure Storage questions. ([LeetCode][4])
+
+*Likely follow-ups:*
+
+* What if points are duplicated?
+* Why squared distance?
+* Can you solve it using vectors?
+* How do you verify right angles?
+
+---
+
+## 2. 🔴 Palindromic Substrings
+
+*Question:* Count all palindromic substrings.
+
+*Expected approach:*
+
+Expand around every possible center.
+
+For each index:
+
+text
+expand(i, i)       // odd
+expand(i, i + 1)   // even
+
+
+Count every successful expansion.
+
+*Complexity:* O(n²) time, O(1) space.
+
+This is explicitly listed in Pure Storage interview-question data. ([Jointaro][5])
+
+---
+
+## 3. 🟠 Longest Palindromic Substring
+
+*Expected approach:*
+
+Again use center expansion.
+
+For each index:
+
+text
+odd palindrome
+even palindrome
+
+
+Track maximum length.
+
+*Complexity:* O(n²) / O(1).
+
+---
+
+## 4. 🟠 Sliding Window — Longest Substring Without Repeating Characters
+
+Given a string, find the longest substring containing unique characters.
+
+*Expected approach:*
+
+Use:
+
+text
+left
+right
+HashMap<char, lastIndex>
+
+
+When duplicate appears:
+
+text
+left = max(left, lastIndex[ch] + 1)
+
+
+*Complexity:* O(n).
+
+---
+
+## 5. 🔴 String manipulation
+
+The Bengaluru Everpure report explicitly says *string manipulation*. ([Glassdoor][3])
+
+Because the exact question wasn't published, prepare:
+
+* reverse words
+* remove duplicates
+* frequency counting
+* substring search
+* character compression
+* anagram detection
+* string rotation
+
+---
+
+## 6. 🔴 Pattern matching
+
+Reported explicitly in the Bengaluru interview. ([Glassdoor][3])
+
+Possible expected approaches:
+
+### Simple pattern matching
+
+Naive:
+
+text
+for each possible starting index:
+    compare pattern
+
+
+O(nm).
+
+### If interviewer asks for optimization
+
+Discuss:
+
+* KMP → O(n+m)
+* Rabin-Karp → expected O(n+m)
+* Z algorithm → O(n+m)
+
+Don't immediately jump to KMP. Explain the trade-off.
+
+---
+
+## 7. 🔴 Sliding-window problem
+
+Explicitly reported. ([Glassdoor][3])
+
+Prepare:
+
+* longest unique substring
+* minimum window substring
+* maximum sum subarray of size K
+* longest substring with at most K distinct characters
+* permutation in string
+* maximum consecutive ones
+
+---
+
+## 8. 🔴 Longest Increasing Subsequence
+
+*Expected approach:*
+
+For interview discussion:
+
+### DP
+
+text
+dp[i] = LIS ending at i
+
+
+O(n²).
+
+Then discuss optimization:
+
+### Binary search / tails
+
+Maintain smallest possible tail for each subsequence length.
+
+O(n log n).
+
+The optimized approach is especially worth knowing at MTS level.
+
+---
+
+## 9. 🔴 Insert Delete GetRandom O(1)
+
+*Expected approach:*
+
+Use:
+
+text
+ArrayList
+HashMap<value,index>
+
+
+Insert:
+
+text
+array.add(value)
+map[value] = index
+
+
+Delete:
+
+Swap target with last element, update map, then remove last.
+
+Random:
+
+text
+array[randomIndex]
+
+
+*Complexity:* average O(1).
+
+This appears in Pure Storage interview-question data. ([Jointaro][5])
+
+---
+
+## 10. 🔴 Design Skiplist
+
+*Expected approach:*
+
+Multiple linked-list levels.
+
+Search:
+
+text
+start at highest level
+move right while next < target
+drop one level
+
+
+Insertion/deletion follow the same path.
+
+Expected:
+
+text
+O(log n)
+
+
+average search/insert/delete.
+
+This is explicitly associated with Pure Storage interview questions. ([Jointaro][5])
+
+---
+
+## 11. 🟠 Two Sum
+
+Expected:
+
+text
+HashMap<value,index>
+
+
+For each x:
+
+text
+target-x
+
+
+Lookup in O(1) average.
+
+Overall O(n).
+
+---
+
+## 12. 🟠 3Sum
+
+Sort first.
+
+For every i, use two pointers.
+
+*Complexity:* O(n²).
+
+Likely follow-up:
+
+> Why not HashSet?
+
+Explain memory vs simplicity.
+
+---
+
+## 13. 🟠 Merge Intervals
+
+Sort by start.
+
+Maintain current interval:
+
+text
+if next.start <= current.end:
+    current.end = max(...)
+else:
+    output current
+
+
+O(n log n).
+
+---
+
+## 14. 🟠 Meeting Rooms II
+
+Sort start/end times or use a min heap.
+
+Heap solution:
+
+text
+sort intervals by start
+heap = end times
+
+
+If earliest room is free, reuse it.
+
+O(n log n).
+
+---
+
+## 15. 🟠 Top K Frequent Elements
+
+Frequency map + heap.
+
+Or bucket sort for O(n).
+
+At MTS level, be prepared to discuss both.
+
+---
+
+## 16. 🟠 LRU Cache
+
+Use:
+
+text
+HashMap<K, Node>
+DoublyLinkedList
+
+
+Map gives node lookup.
+
+List gives O(1) eviction/reordering.
+
+Overall:
+
+text
+get = O(1)
+put = O(1)
+
+
+---
+
+## 17. 🟠 Binary Tree — Lowest Common Ancestor
+
+For a binary tree:
+
+Recursive:
+
+text
+if root == null
+if root == p || root == q
+left = LCA(left)
+right = LCA(right)
+
+if left != null && right != null:
+    return root
+
+
+---
+
+## 18. 🟠 Number of Islands
+
+DFS/BFS over grid.
+
+Mark visited cells.
+
+O(rows × cols).
+
+Follow-up:
+
+> What if grid is huge and distributed?
+
+Now it becomes a system-design discussion.
+
+---
+
+## 19. 🟠 Clone Graph
+
+DFS/BFS +:
+
+text
+Map<original, clone>
+
+
+The map is essential for cycles.
+
+---
+
+## 20. 🟠 Kth Largest Element
+
+Expected discussion:
+
+* sorting: O(n log n)
+* min heap: O(n log k)
+* quickselect: average O(n)
+
+At MTS level, don't stop at sorting.
+
+---
+
+# ROUND 2 — CONCURRENCY
+
+This is arguably the *most important Pure Storage-specific preparation area*.
+
+A detailed Pure Storage MTS report has an entire technical round based on threads and synchronization. ([LeetCode][4])
+
+A 2025 MTS-2 candidate also specifically reported *multithreading and concurrency*. ([Jointaro][5])
+
+---
+
+# 21. 🔴 reg_cb() event synchronization problem
+
+This is the one I would practice *very thoroughly*.
+
+You have:
+
+text
+Event running
+────────────────────────────────────────>
+
+U1: reg_cb(f1)
+             U2: reg_cb(f2)
+
+                         Event completes
+
+                                      U3: reg_cb(f3)
+
+
+Requirements:
+
+text
+f1 → wait
+f2 → wait
+event finishes
+f1, f2 execute
+
+f3 → execute immediately
+
+
+### Expected approach
+
+Maintain:
+
+text
+eventInProgress
+pendingCallbacks
+lock
+condition variable
+
+
+Pseudo-logic:
+
+text
+reg_cb(callback):
+    acquire lock
+
+    if eventInProgress:
+        pendingCallbacks.add(callback)
+        return
+
+    release lock
+    execute callback
+
+
+When event finishes:
+
+text
+acquire lock
+eventInProgress = false
+callbacks = pendingCallbacks
+pendingCallbacks.clear()
+release lock
+
+execute callbacks
+
+
+*Important:* Don't execute callbacks while holding the lock unless you've deliberately designed for reentrancy.
+
+The actual reported problem is substantially this scenario. ([LeetCode][4])
+
+---
+
+# 22. 🔴 Mutex vs semaphore
+
+*Mutex:*
+
+Ownership-based lock.
+
+Usually:
+
+text
+one thread owns lock
+
+
+*Semaphore:*
+
+Counter controlling access to a resource.
+
+For example:
+
+text
+5 permits
+→ maximum 5 concurrent users
+
+
+---
+
+# 23. 🔴 Race condition
+
+Example:
+
+text
+counter++
+
+
+
+isn't necessarily atomic.
+
+Conceptually:
+
+text
+read
+add
+write
+
+
+Two threads can interleave these operations.
+
+Solution:
+
+* mutex
+* atomic operation
+* lock-free structure where appropriate
+
+---
+
+# 24. 🔴 Deadlock
+
+Four Coffman conditions:
+
+1. Mutual exclusion
+2. Hold and wait
+3. No preemption
+4. Circular wait
+
+Prevent by imposing a lock ordering.
+
+Example:
+
+text
+Thread A: Lock A → Lock B
+Thread B: Lock B → Lock A
+
+
+Deadlock.
+
+Fix:
+
+text
+Both always lock A then B.
+
+
+---
+
+# 25. 🔴 What is a condition variable?
+
+Allows a thread to sleep until some condition becomes true.
+
+Pattern:
+
+text
+lock
+while (!condition):
+    wait()
+unlock
+
+
+Use while, not if, because of spurious wakeups and condition changes.
+
+---
+
+# 26. 🔴 wait() vs notify() vs notifyAll()
+
+wait():
+
+* releases monitor
+* blocks thread
+
+notify():
+
+* wakes one waiting thread
+
+notifyAll():
+
+* wakes all waiting threads
+
+Important:
+
+> Notification doesn't transfer ownership of the lock immediately.
+
+---
+
+# 27. 🔴 What if callback itself calls reg_cb()?
+
+This is a very good follow-up to the actual problem.
+
+Potential issue:
+
+text
+reg_cb()
+ → callback
+    → reg_cb()
+
+
+If callback execution happens while holding a non-reentrant lock, deadlock is possible.
+
+*Better design:*
+
+Take callbacks out of the protected queue, release lock, then execute them.
+
+---
+
+# 28. 🔴 What happens if callback throws an exception?
+
+Don't let one callback prevent the others from running.
+
+Prefer:
+
+text
+for callback:
+    try:
+       execute
+    catch:
+       record failure
+
+
+Potentially return/report failures separately.
+
+---
+
+# 29. 🟠 ReentrantLock vs synchronized
+
+` synchronized`:
+
+* simpler
+* automatic lock release
+
+ReentrantLock:
+
+* explicit locking
+* tryLock
+* interruptible lock acquisition
+* multiple conditions
+
+Use try/finally.
+
+---
+
+# 30. 🟠 ReadWriteLock
+
+Useful when:
+
+text
+many reads
+few writes
+
+
+But it isn't automatically faster.
+
+Consider:
+
+* contention
+* critical-section length
+* fairness
+* write starvation
+* overhead
+
+---
+
+# 31. 🟠 AtomicInteger vs synchronized counter
+
+Atomic operations are useful for simple independent state transitions.
+
+For:
+
+text
+counter++
+
+
+an atomic increment works.
+
+But for:
+
+text
+if balance >= amount:
+    balance -= amount
+
+
+you need an atomic compound operation/lock.
+
+---
+
+# 32. 🟠 Producer-consumer
+
+Expected implementation:
+
+text
+bounded queue
+mutex
+notEmpty
+notFull
+
+
+Producer:
+
+text
+while queue full:
+    wait(notFull)
+
+enqueue
+
+notify(notEmpty)
+
+
+Consumer is the inverse.
+
+---
+
+# 33. 🟠 Thread pool
+
+Why?
+
+Creating a thread per request is expensive.
+
+Thread pool:
+
+text
+fixed/elastic workers
+        ↓
+     task queue
+
+
+Advantages:
+
+* bounded resources
+* reuse
+* controlled concurrency
+
+---
+
+# 34. 🟠 Starvation vs deadlock
+
+*Deadlock:*
+
+Threads wait forever for each other.
+
+*Starvation:*
+
+A thread never gets enough resources/CPU because others continuously win.
+
+---
+
+# 35. 🟠 Livelock
+
+Threads are active but make no progress.
+
+Classic example:
+
+text
+two people repeatedly move aside
+
+
+---
+
+# 36. 🟠 Thread-safe singleton
+
+Possible approach:
+
+Initialization-on-demand holder idiom:
+
+text
+class Singleton {
+    private Singleton() {}
+
+    private static class Holder {
+        static final Singleton INSTANCE = new Singleton();
+    }
+
+    static Singleton getInstance() {
+        return Holder.INSTANCE;
+    }
+}
+
+
+---
+
+# 37. 🟠 ConcurrentHashMap
+
+Know:
+
+* why it differs from HashMap
+* concurrent access
+* atomic operations such as compute
+* why compound operations can still require careful design
+
+---
+
+# 38. 🟠 ConcurrentModificationException
+
+It generally occurs when a collection is structurally modified while using a fail-fast iterator.
+
+Example:
+
+text
+for (x : list) {
+    list.remove(x);
+}
+
+
+Safer:
+
+text
+iterator.remove()
+
+
+or use appropriate concurrent collections depending on semantics.
+
+The detailed Pure Storage report specifically says the interviewer asked about this. ([LeetCode][4])
+
+---
+
+# ROUND 3 — OS / SYSTEM FUNDAMENTALS
+
+The reported MTS interviews have also included OS fundamentals, particularly processes, threads and memory.
+
+---
+
+# 39. 🟠 Process vs thread
+
+*Process:*
+
+* separate address space
+* heavier context switching
+
+*Thread:*
+
+* shares process memory
+* cheaper communication
+* requires synchronization
+
+---
+
+# 40. 🟠 Context switching
+
+CPU saves:
+
+text
+registers
+program counter
+stack pointer
+
+
+for current execution context and restores another.
+
+Costs include cache/TLB effects.
+
+---
+
+# 41. 🟠 User mode vs kernel mode
+
+Applications execute restricted operations in user mode.
+
+Privileged operations require kernel mode via:
+
+text
+system call
+
+
+---
+
+# 42. 🟠 What happens during a system call?
+
+Typical flow:
+
+text
+application
+ ↓
+system-call interface
+ ↓
+CPU privilege transition
+ ↓
+kernel handler
+ ↓
+operation
+ ↓
+return to user mode
+
+
+---
+
+# 43. 🟠 Virtual memory
+
+Each process gets a virtual address space.
+
+Virtual addresses are translated to physical memory using:
+
+text
+page tables
+TLB
+
+
+---
+
+# 44. 🟠 Page fault
+
+Occurs when required page isn't currently mapped/resident.
+
+OS may:
+
+text
+locate page
+load from disk
+update page table
+resume process
+
+
+Major page faults are expensive.
+
+---
+
+# 45. 🟠 Stack vs heap
+
+Stack:
+
+* function-local storage
+* automatic lifetime
+* usually thread-specific
+
+Heap:
+
+* dynamically allocated
+* longer/explicit lifetime
+* shared between threads within process
+
+---
+
+# 46. 🟠 Memory leak
+
+Allocated memory becomes unreachable but isn't released.
+
+Detection:
+
+* heap profilers
+* allocation tracing
+* RSS monitoring
+* leak sanitizers
+
+---
+
+# 47. 🟠 Zombie process
+
+Child has exited but parent hasn't collected its exit status.
+
+Parent calls:
+
+text
+wait()/waitpid()
+
+
+to reap it.
+
+---
+
+# 48. 🟠 Copy-on-write
+
+After fork, parent and child can initially share physical pages.
+
+When one writes:
+
+text
+page copied
+
+
+This saves memory.
+
+---
+
+# ROUND 4 — NETWORKING
+
+---
+
+# 49. 🔴 What happens when you type google.com?
+
+This is explicitly reported in Pure Storage interview material.
+
+Expected answer:
+
+text
+Browser
+ ↓
+DNS cache
+ ↓
+DNS resolver
+ ↓
+TCP connection
+ ↓
+TLS handshake
+ ↓
+HTTP request
+ ↓
+server/load balancer
+ ↓
+HTTP response
+ ↓
+browser rendering
+
+
+Don't give only this diagram.
+
+Explain each step.
+
+---
+
+# 50. 🔴 TCP vs UDP
+
+TCP:
+
+* connection-oriented
+* reliable
+* ordered
+* retransmission
+* flow control
+* congestion control
+
+UDP:
+
+* connectionless
+* no guaranteed delivery
+* lower protocol overhead
+
+UDP is useful when application prefers timeliness over retransmission, e.g. real-time traffic.
+
+---
+
+# 51. 🔴 TCP three-way handshake
+
+text
+Client → SYN
+Server → SYN + ACK
+Client → ACK
+
+
+Purpose:
+
+* establish connection
+* synchronize sequence numbers
+
+---
+
+# 52. 🟠 TCP connection termination
+
+Typical:
+
+text
+FIN
+ACK
+FIN
+ACK
+
+
+Four-way exchange because each direction is independently closed.
+
+---
+
+# 53. 🟠 Flow control vs congestion control
+
+*Flow control:*
+
+Protect receiver.
+
+*Congestion control:*
+
+Protect network.
+
+---
+
+# 54. 🟠 DNS
+
+Know:
+
+text
+Browser cache
+OS cache
+local resolver
+root
+TLD
+authoritative server
+
+
+Typical records:
+
+* A
+* AAAA
+* CNAME
+* MX
+* TXT
+* NS
+
+---
+
+# 55. 🟠 HTTP vs HTTPS
+
+HTTPS = HTTP over TLS.
+
+TLS provides:
+
+* encryption
+* integrity
+* server authentication
+
+---
+
+# 56. 🟠 HTTP/1.1 vs HTTP/2
+
+HTTP/2 adds:
+
+* binary framing
+* multiplexing
+* header compression
+* streams
+
+This reduces head-of-line issues at HTTP layer, though TCP-level loss can still affect streams.
+
+---
+
+# ROUND 5 — SYSTEM DESIGN
+
+Current Pure reports show a dedicated *design round* and another *design/coding round*. ([Reddit][1])
+
+One older Everpure report specifically described the system-design round as essentially *web-service design*. ([Glassdoor][6])
+
+---
+
+# 57. 🔴 Design a scalable web service
+
+Start with:
+
+text
+Client
+ ↓
+Load Balancer
+ ↓
+API servers
+ ↓
+Cache
+ ↓
+Database
+
+
+Then clarify:
+
+* QPS
+* latency
+* availability
+* consistency
+* data size
+* read/write ratio
+
+Don't start drawing random microservices before establishing requirements.
+
+---
+
+# 58. 🟠 Design a URL shortener
+
+Components:
+
+text
+API
+ID generator
+database
+cache
+analytics
+
+
+Short URL generation:
+
+text
+unique ID → Base62
+
+
+Need to discuss:
+
+* collisions
+* expiration
+* caching
+* hot URLs
+* database partitioning
+
+---
+
+# 59. 🟠 Design a rate limiter
+
+Possible algorithm:
+
+text
+Token Bucket
+
+
+Maintain:
+
+text
+tokens
+lastRefillTime
+
+
+Alternative:
+
+* leaky bucket
+* sliding window
+* fixed window
+
+For distributed rate limiting:
+
+text
+Redis
+
+
+can hold counters/state.
+
+---
+
+# 60. 🟠 Design a distributed cache
+
+Discuss:
+
+* key/value storage
+* consistent hashing
+* replication
+* eviction
+* TTL
+* cache invalidation
+* hot keys
+* failure handling
+
+---
+
+# 61. 🟠 Design a notification service
+
+text
+API
+ ↓
+Queue
+ ↓
+workers
+ ↓
+email/SMS/push providers
+
+
+Need:
+
+* retry
+* exponential backoff
+* dead-letter queue
+* idempotency
+* rate limiting
+
+---
+
+# 62. 🟠 Design a job scheduler
+
+Components:
+
+text
+API
+scheduler
+persistent job store
+queue
+workers
+
+
+Need to handle:
+
+* retries
+* duplicate execution
+* worker failure
+* scheduling accuracy
+* distributed locking
+
+---
+
+# 63. 🟠 Design a distributed lock
+
+Discuss:
+
+* Redis-based lock
+* lease/TTL
+* ownership token
+* expiry
+* fencing tokens
+
+Important:
+
+> A lock timeout alone doesn't necessarily make an old worker safe.
+
+Fencing tokens are the stronger solution.
+
+---
+
+# 64. 🟠 Design a logging system
+
+text
+Applications
+ ↓
+agents
+ ↓
+Kafka
+ ↓
+processing
+ ↓
+storage
+ ↓
+query API
+
+
+Discuss:
+
+* ingestion rate
+* ordering
+* retention
+* indexing
+* partitioning
+* backpressure
+
+---
+
+# 65. 🟠 Design an API for millions of clients
+
+Expected concepts:
+
+* stateless servers
+* load balancing
+* horizontal scaling
+* caching
+* DB replicas
+* partitioning
+* rate limiting
+* connection pooling
+* observability
+
+---
+
+# ROUND 6 — STORAGE / PURE-SPECIFIC
+
+This is where I would differentiate Pure Storage preparation from generic FAANG preparation.
+
+Pure is a storage company, and current 2026 reports show a domain/design round in the onsite process. ([Reddit][7])
+
+---
+
+# 66. 🟠 What is RAID?
+
+Explain:
+
+text
+RAID 0 → striping
+RAID 1 → mirroring
+RAID 5 → striping + single parity
+RAID 6 → striping + dual parity
+RAID 10 → mirroring + striping
+
+
+Discuss:
+
+* capacity
+* performance
+* failure tolerance
+* rebuild cost
+
+---
+
+# 67. 🟠 RAID vs erasure coding
+
+RAID is generally local redundancy.
+
+Erasure coding:
+
+text
+data fragments + parity fragments
+
+
+distributed across nodes/drives.
+
+Useful for large distributed storage systems because it can improve storage efficiency, but encoding/rebuild complexity increases.
+
+---
+
+# 68. 🟠 Block vs file vs object storage
+
+*Block:*
+
+Raw blocks exposed to client.
+
+*File:*
+
+Filesystem abstraction.
+
+*Object:*
+
+Objects accessed through APIs such as:
+
+text
+PUT
+GET
+DELETE
+
+
+Pure Storage has products across storage architectures, so know these distinctions.
+
+---
+
+# 69. 🟠 IOPS vs throughput vs latency
+
+IOPS:
+
+text
+operations / second
+
+
+Throughput:
+
+text
+bytes / second
+
+
+Latency:
+
+text
+time per operation
+
+
+A system can have:
+
+text
+high throughput
+but high latency
+
+
+depending on workload.
+
+---
+
+# 70. 🟠 Sequential vs random I/O
+
+Sequential:
+
+text
+large contiguous operations
+
+
+Usually better throughput.
+
+Random:
+
+text
+scattered accesses
+
+
+Often more latency/IOPS sensitive.
+
+---
+
+# 71. 🟠 What happens when a storage node fails?
+
+Strong answer:
+
+1. detect failure
+2. stop routing requests to node
+3. determine affected data
+4. use replicas/parity
+5. maintain availability
+6. rebuild/re-replicate
+7. monitor recovery
+8. avoid overwhelming healthy nodes
+
+The important part is *recovery traffic itself shouldn't destabilize the cluster*.
+
+---
+
+# 72. 🟠 How would you distribute data across nodes?
+
+Options:
+
+* consistent hashing
+* partition ranges
+* placement groups
+* deterministic placement
+
+Need to consider:
+
+* balancing
+* failure domains
+* replication
+* rebalancing
+
+---
+
+# 73. 🟠 How do you handle replication?
+
+For example:
+
+text
+3 replicas
+
+
+Data can be written to multiple nodes.
+
+Discuss:
+
+* synchronous vs asynchronous
+* consistency
+* quorum
+* latency
+* failure handling
+
+---
+
+# 74. 🟠 Strong vs eventual consistency
+
+Strong:
+
+> Reads observe the latest committed write according to system guarantees.
+
+Eventual:
+
+> Replicas converge if updates stop.
+
+Choose based on application requirements.
+
+---
+
+# 75. 🟠 What is quorum?
+
+For replication factor N:
+
+text
+W = write quorum
+R = read quorum
+
+
+If:
+
+text
+R + W > N
+
+
+read and write sets overlap, which can support stronger consistency under the right protocol assumptions.
+
+---
+
+# 76. 🟠 How would you rebalance a storage cluster?
+
+When nodes are added/removed:
+
+text
+calculate imbalance
+identify data to move
+copy data
+verify
+switch ownership
+delete old copy
+
+
+Important:
+
+> Don't move too much data at once.
+
+Throttle migration to preserve foreground workload performance.
+
+---
+
+# ROUND 7 — KUBERNETES / CLOUD
+
+The Bengaluru MTS report explicitly mentioned *Kubernetes core concepts*. ([Glassdoor][3])
+
+---
+
+# 77. 🔴 What happens when a Kubernetes pod dies?
+
+Expected:
+
+text
+container/pod fails
+ ↓
+controller observes desired != actual
+ ↓
+new pod created
+ ↓
+scheduler selects node
+ ↓
+kubelet starts container
+
+
+If deployment has replicas, desired state is restored.
+
+---
+
+# 78. 🟠 Pod vs Deployment
+
+Pod:
+
+> smallest deployable Kubernetes unit.
+
+Deployment:
+
+> manages ReplicaSets and desired number of pods.
+
+---
+
+# 79. 🟠 Service types
+
+Know:
+
+text
+ClusterIP
+NodePort
+LoadBalancer
+ExternalName
+
+
+Most common internal service:
+
+text
+ClusterIP
+
+
+---
+
+# 80. 🟠 Debug CrashLoopBackOff
+
+Expected process:
+
+text
+kubectl describe pod
+kubectl logs
+kubectl logs --previous
+check events
+check probes
+check env/config
+check resources
+check dependencies
+
+
+Don't immediately say "restart the pod."
+
+Find the reason.
+
+---
+
+# BONUS — questions I'd expect at MTS level
+
+If the interviewer has another 30–45 minutes, these are excellent candidates.
+
+### 81. 🟢 How do you make an API idempotent?
+
+Use:
+
+text
+idempotency key
+
+
+Persist request/result mapping.
+
+Repeated request with same key returns same result.
+
+---
+
+### 82. 🟢 What happens if your database becomes unavailable?
+
+Discuss:
+
+* retries
+* exponential backoff
+* circuit breaker
+* fallback/cache where appropriate
+* failover
+* connection pool behavior
+* graceful degradation
+
+Avoid infinite retries.
+
+---
+
+### 83. 🟢 What happens if Kafka is unavailable?
+
+Don't simply keep accepting unlimited requests.
+
+Need:
+
+* backpressure
+* bounded buffers
+* retry policy
+* durability requirements
+* fail-fast behavior
+
+---
+
+### 84. 🟢 How would you detect a memory leak in production?
+
+Look at:
+
+text
+RSS
+heap
+allocation rate
+GC
+object growth
+
+
+Then use:
+
+* heap dump
+* profiler
+* allocation tracing
+
+---
+
+### 85. 🟢 How would you investigate high CPU?
+
+Start with:
+
+text
+top
+pidstat
+profiling
+thread dumps
+
+
+Determine whether CPU is:
+
+* application computation
+* busy loop
+* GC
+* lock contention
+* kernel/system time
+
+---
+
+### 86. 🟢 How would you investigate high latency?
+
+Break latency down:
+
+text
+client
+network
+load balancer
+application
+database
+downstream services
+
+
+Measure rather than guess.
+
+Use:
+
+* metrics
+* tracing
+* logs
+* percentiles
+
+Especially:
+
+text
+p50
+p95
+p99
+
+
+---
+
+### 87. 🟢 What happens if two services update the same resource concurrently?
+
+Discuss:
+
+* optimistic locking
+* version number
+* compare-and-swap
+* pessimistic locking
+* transactions
+* conflict resolution
+
+---
+
+### 88. 🟢 Design a thread-safe cache
+
+Need:
+
+text
+HashMap
+lock
+eviction policy
+TTL
+
+
+For high concurrency:
+
+* sharded locks
+* concurrent map
+* atomic metadata
+* lock granularity
+
+---
+
+### 89. 🟢 Design a bounded concurrent queue
+
+Need:
+
+text
+queue
+mutex
+notEmpty
+notFull
+
+
+Exactly the sort of question that lets interviewer explore concurrency fundamentals.
+
+---
+
+### 90. 🟢 How would you make a distributed service fault tolerant?
+
+Discuss:
+
+text
+replication
+timeouts
+retries
+circuit breakers
+health checks
+leader election
+idempotency
+backpressure
+observability
+
+
+---
+
+# What I would actually expect in Sandeep's interview
+
+Based on the *2026 Pure Storage process reports*, I would not prepare these 90 questions equally.
+
+The current reports suggest the loop is approximately:
+
+text
+ROUND 1
+Algorithm
+     ↓
+ROUND 2
+Concurrency
+     ↓
+ROUND 3
+Design
+     ↓
+ROUND 4
+Design + Coding
+     ↓
+HM
+
+
+A recent 2026 report explicitly describes that sequence, while another recent report describes the initial screening as *algorithm + concurrency*. ([Reddit][1])
+
+And Everpure's older MTS reports independently show:
+
+text
+Hackerrank
+Data Structures
+Algorithms
+Concurrency
+System Design
+
+
+and another describes:
+
+text
+LC coding
+domain-specific system design/coding
+geometry
+concurrency
+embedded design
+
+
+([Glassdoor][6])
+
+## Therefore, my priority would be:
+
+| Priority   | Topics        |
+| ---------- | ------------- |
+| 🔥🔥🔥🔥🔥 | Concurrency   |
+| 🔥🔥🔥🔥🔥 | Medium DSA    |
+| 🔥🔥🔥🔥   | System design |
+| 🔥🔥🔥🔥   | OS            |
+| 🔥🔥🔥     | Networking    |
+| 🔥🔥🔥     | Kubernetes    |
+| 🔥🔥🔥     | Storage       |
+| 🔥🔥       | Embedded/LLD  |
+| 🔥🔥       | Behavioral    |
+
+### And these 15 deserve special attention
+
+If there's limited time, I'd make sure Sandeep can *solve and explain these without hesitation*:
+
+1. *Valid Square* 🔴
+2. *Palindromic Substrings* 🔴
+3. *Sliding Window* 🔴
+4. *Pattern Matching* 🔴
+5. *LIS* 🔴
+6. *Insert/Delete/GetRandom O(1)* 🔴
+7. *Skiplist* 🔴
+8. *reg_cb() concurrency problem* 🔴
+9. *Deadlock + lock ordering*
+10. *Producer/consumer*
+11. *Thread-safe cache*
+12. *What happens when you type google.com*
+13. *Scalable web service*
+14. *Storage-node failure*
+15. *Kubernetes pod failure*
+
+The reason I would put *reg_cb() at #1 for technical preparation* is that it isn't merely a generic concurrency question: it is an actual reported Pure Storage MTS question, and the published interview report says the interviewer followed it with fundamentals such as concurrent modification and synchronization. ([LeetCode][4])
+
+And importantly, *Pure's 2026 interviews appear to reward the reasoning process*. The candidate who got the MTS-2 offer said the questions weren't particularly challenging, but the interview itself was difficult because the interviewer wanted them to continuously consider alternative paths and justify decisions. ([Reddit][2])
+
+So for every one of these questions, Sandeep should practice answering in this order:
+
+*clarify → brute force → identify bottleneck → optimize → prove correctness → complexity → edge cases → interviewer follow-ups.*
+
+That is much closer to what Pure seems to be evaluating than simply memorizing LeetCode solutions. ([Reddit][2])
+
+[1]: https://www.reddit.com/r/purestorage/comments/1r10cob/my_experience_in_pure_storage/?utm_source=chatgpt.com "My experience in Pure storage"
+[2]: https://www.reddit.com/r/purestorage/comments/1qto5jo/pure_storage_mts2_offer/?utm_source=chatgpt.com "Pure storage MTS2 offer"
+[3]: https://www.glassdoor.com/Interview/Everpure-Interview-Questions-E364364.htm?filter.jobTitleExact=Member+of+Technical+Staff%28MTS%29&utm_source=chatgpt.com "Everpure Member of Technical Staff(MTS) Interview Experience & Questions | Glassdoor"
+[4]: https://leetcode.com/discuss/post/1030039/pure-storage-technical-round-member-of-technical-staff/?utm_source=chatgpt.com "Pure Storage | Technical Round | Member Of Technical Staff - Discuss - LeetCode"
+[5]: https://www.jointaro.com/interviews/companies/pure-storage/experiences/mts-2-software-engineer-united-states-february-1-2025-no-offer-negative-ba77e65a/?utm_source=chatgpt.com "Pure Storage MTS-2 Software Engineer Interview Experience - United States"
+[6]: https://www.glassdoor.com/Interview/Round-0-hackerrank-quite-easy-Round-1-data-structures-very-nice-pair-programming-Round-2-algorithms-nothing-crazy-QTN_6788089.htm?utm_source=chatgpt.com "Everpure Interview Question: Round 0 - hackerrank; quite easy Round 1 - data structures; very nice pair programming Round 2 - algorithms; nothing crazy, little bit tricky to understand each other Round 3 - concurrency; very helpful interviewer who took into account my background in mostly single threaded languages Round 4 - system design; basically web service design | Glassdoor"
+[7]: https://www.reddit.com/r/purestorage/comments/1uu1186/pure_storage_onsite_final_onsite_interview/?utm_source=chatgpt.com "Pure Storage Onsite Final Onsite Interview"
