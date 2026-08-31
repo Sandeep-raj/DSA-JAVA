@@ -101,4 +101,45 @@ public class TopKFreqElems {
 
         return result;
     }
+
+    static void topkfreq(int[] arr, int k) {
+        HashSet<Integer>[] bucket = new HashSet[20001];
+        int base = 10000;
+
+        HashMap<Integer, Integer> map = new HashMap();
+
+        for(int i = 0; i < arr.length; i++) {
+            int val = arr[i] + base;
+            map.put(val, map.getOrDefault(val, 0) + 1);
+
+            int curr = map.get(val);
+            int prev = curr - 1;
+
+            if(prev != 0) {
+                bucket[prev].remove(val);
+            }
+
+            if(bucket[curr] == null) {
+                bucket[curr] = new HashSet<Integer>();
+            }
+            bucket[curr].add(val);
+        }
+
+        int[] res = new int[k];
+        int idx = 0, curr = 20000;
+        while(curr >= 0 && idx < k) {
+            if(bucket[curr] != null && bucket[curr].size() > 0) {
+                for(int x : bucket[curr]) {
+                    res[idx] = x - base;
+                    idx++;
+                    if(idx == k) {
+                        break;
+                    }
+                }
+            }
+            curr--;
+        }
+
+        System.out.println(Arrays.toString(res));
+    }
 }
